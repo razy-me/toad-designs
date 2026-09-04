@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1500 500" width="3000" height="1000">
+  <defs>
+    <linearGradient id="lin_grad_1" x1="15%" y1="15%" x2="85%" y2="85%">
+      <stop offset="0%" stop-color="#050814" />
+      <stop offset="50%" stop-color="#0b1226" />
+      <stop offset="100%" stop-color="#040e1a" />
+    </linearGradient>
+    <radialGradient id="rad_grad_2" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="rgba(6, 182, 212, 0.28)" />
+      <stop offset="45%" stop-color="rgba(2, 132, 199, 0.1)" />
+      <stop offset="75%" stop-color="transparent" />
+    </radialGradient>
+    <radialGradient id="rad_grad_3" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="rgba(168, 85, 247, 0.2)" />
+      <stop offset="45%" stop-color="rgba(99, 102, 241, 0.08)" />
+      <stop offset="75%" stop-color="transparent" />
+    </radialGradient>
+    <radialGradient id="rad_grad_4" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="rgba(16, 185, 129, 0.18)" />
+      <stop offset="70%" stop-color="transparent" />
+    </radialGradient>
+    <filter id="filter_1" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="3" flood-color="#10b981" />
+    </filter>
+    <filter id="filter_2" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="14" stdDeviation="17.5" flood-color="rgba(16, 185, 129, 0.35)" />
+    </filter>
+    <filter id="filter_3" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="rgba(0, 0, 0, 0.35)" />
+    </filter>
+    <linearGradient id="lin_grad_5" x1="15%" y1="15%" x2="85%" y2="85%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <filter id="filter_4" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="4" flood-color="#ccff00" />
+    </filter>
+    <filter id="filter_5" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="4" flood-color="#ccff00" />
+    </filter>
+    <filter id="filter_6" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="30" stdDeviation="35" flood-color="rgba(0, 0, 0, 0.75)" />
+    </filter>
+    <filter id="filter_7" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="3" flood-color="#10b981" />
+    </filter>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#lin_grad_1)" />
+ <circle cx="1355" cy="195" r="375" fill="url(#rad_grad_2)" id="auroraCyan" />
+ <circle cx="245" cy="485" r="325" fill="url(#rad_grad_3)" id="auroraPurple" />
+ <circle cx="955" cy="495" r="275" fill="url(#rad_grad_4)" id="auroraEmerald" />
+ <circle cx="1350" cy="150" r="250" fill="transparent" stroke="rgba(56, 189, 248, 0.08)" stroke-width="1" id="orbit1" />
+ <circle cx="1350" cy="150" r="360" fill="transparent" stroke="rgba(56, 189, 248, 0.05)" stroke-width="1" id="orbit2" />
+ <circle cx="1350" cy="150" r="470" fill="transparent" stroke="rgba(56, 189, 248, 0.03)" stroke-width="1" id="orbit3" />
+  <g id="bannerRoot">
+    <g id="leftSection">
+      <g id="versionBadge">
+        <rect x="70" y="101.25" width="228" height="24" rx="999" ry="999" fill="rgba(16, 185, 129, 0.12)" stroke="rgba(16, 185, 129, 0.4)" stroke-width="1" />
+ <circle cx="87.5" cy="113.25" r="3.5" fill="#10b981" id="statusDot" filter="url(#filter_1)" />
+        <text x="99" y="106.25" font-family="sans-serif" font-size="11" font-weight="700" font-style="normal" text-anchor="start" letter-spacing="1.2" xml:space="preserve" fill="#10b981" id="__auto_1" dominant-baseline="hanging">TOAD DSL • SPATIAL DESIGN COMPILER</text>
+      </g>
+      <g id="brandRow">
+        <g id="emblemFrame">
+ <rect x="70" y="143.25" width="92" height="92" rx="22" ry="22" fill="#0c1220" stroke="#1e293b" stroke-width="1.5" id="emblemBase" filter="url(#filter_2)" />
+ <rect x="74" y="147.25" width="84" height="84" rx="18" ry="18" fill="transparent" stroke="rgba(16, 185, 129, 0.45)" stroke-width="1" id="emblemRim" />
+ <rect x="85" y="178.25" width="62" height="38" rx="12" ry="12" fill="url(#lin_grad_5)" id="toadHead" filter="url(#filter_3)" />
+ <circle cx="100" cy="177.25" r="11" fill="#0c1220" stroke="#10b981" stroke-width="2" id="eyeLeftOuter" />
+ <circle cx="100" cy="177.25" r="5.5" fill="#ccff00" id="eyeLeftCore" filter="url(#filter_4)" />
+ <circle cx="132" cy="177.25" r="11" fill="#0c1220" stroke="#10b981" stroke-width="2" id="eyeRightOuter" />
+ <circle cx="132" cy="177.25" r="5.5" fill="#ccff00" id="eyeRightCore" filter="url(#filter_5)" />
+          <text x="111" y="187.75" font-family="sans-serif" font-size="12" font-weight="900" font-style="normal" text-anchor="start" xml:space="preserve" fill="#04060d" id="promptGlyph" dominant-baseline="hanging">&gt;_</text>
+ <rect x="103" y="204.25" width="26" height="4" rx="2" ry="2" fill="#04060d" id="mouthBeam" />
+        </g>
+        <g id="wordmarkBlock">
+          <g id="wordmarkRow">
+            <text x="182" y="146.25" font-family="sans-serif" font-size="56" font-weight="900" font-style="normal" text-anchor="start" letter-spacing="-2" xml:space="preserve" fill="#ffffff" id="logoTitle" dominant-baseline="hanging">toad</text>
+            <text x="263" y="163.75" font-family="sans-serif" font-size="28" font-weight="800" font-style="normal" text-anchor="start" xml:space="preserve" fill="#10b981" id="logoSuffix" dominant-baseline="hanging">.dsl</text>
+          </g>
+          <text x="182" y="218.25" font-family="sans-serif" font-size="11" font-weight="700" font-style="normal" text-anchor="start" letter-spacing="1.8" xml:space="preserve" fill="#06b6d4" id="tagline" dominant-baseline="hanging">CODE YOUR CANVAS • EXPORT NATIVE PSD &amp; SVG</text>
+        </g>
+      </g>
+      <text x="70" y="253.25" font-family="sans-serif" font-size="25" font-weight="800" font-style="normal" text-anchor="start" letter-spacing="-0.8" xml:space="preserve" fill="#f8fafc" id="heroHeadline" dominant-baseline="hanging">Declarative design. Native vector compilation.</text>
+      <text x="70" y="302.25" font-family="sans-serif" font-size="15" font-weight="400" font-style="normal" text-anchor="start" xml:space="preserve" fill="#94a3b8" id="heroDesc" dominant-baseline="hanging"><tspan x="70" dy="0">A high-performance spatial DSL that compiles code directly into pixel-perfect SVGs, Skia-accelerated images, and fully editable layered</tspan><tspan x="70" dy="23.25">Photoshop PSDs.</tspan></text>
+      <g id="featureChips">
+        <g id="chip1">
+          <rect x="70" y="366.75" width="112" height="32" rx="10" ry="10" fill="rgba(255, 255, 255, 0.05)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" />
+ <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1Z" transform="translate(86 375.75) scale(0.5833333333333334 0.5833333333333334)" fill="none" stroke="#38bdf8" stroke-width="2" id="__auto_2" />
+          <text x="108" y="374.75" font-family="sans-serif" font-size="13" font-weight="600" font-style="normal" text-anchor="start" xml:space="preserve" fill="#38bdf8" id="__auto_3" dominant-baseline="hanging">Skia 2D Core</text>
+        </g>
+        <g id="chip2">
+          <rect x="194" y="366.75" width="116" height="32" rx="10" ry="10" fill="rgba(255, 255, 255, 0.05)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" />
+ <path d="M5 12h14M12 5l7 7-7 7" transform="translate(210 375.75) scale(0.5833333333333334 0.5833333333333334)" fill="none" stroke="#a855f7" stroke-width="2" id="__auto_4" />
+          <text x="232" y="374.75" font-family="sans-serif" font-size="13" font-weight="600" font-style="normal" text-anchor="start" xml:space="preserve" fill="#a855f7" id="__auto_5" dominant-baseline="hanging">Layered PSDs</text>
+        </g>
+        <g id="chip3">
+          <rect x="322" y="366.75" width="117" height="32" rx="10" ry="10" fill="rgba(255, 255, 255, 0.05)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" />
+ <path d="M20 6 9 17l-5-5" transform="translate(338 375.75) scale(0.5833333333333334 0.5833333333333334)" fill="none" stroke="#10b981" stroke-width="2.2" id="__auto_6" />
+          <text x="360" y="374.75" font-family="sans-serif" font-size="13" font-weight="600" font-style="normal" text-anchor="start" xml:space="preserve" fill="#10b981" id="__auto_7" dominant-baseline="hanging">4-Pass Solver</text>
+        </g>
+      </g>
+    </g>
+    <g id="codeWindow" filter="url(#filter_6)">
+      <rect x="806" y="103" width="624" height="294" rx="20" ry="20" fill="rgba(8, 14, 30, 0.82)" stroke="rgba(56, 189, 248, 0.25)" stroke-width="1" />
+      <g id="windowHeader">
+        <rect x="806" y="103" width="624" height="50" fill="rgba(255, 255, 255, 0.03)" stroke="rgba(255, 255, 255, 0.07)" stroke-width="1" />
+ <circle cx="832" cy="128" r="6" fill="#ef4444" id="dotClose" />
+ <circle cx="856" cy="128" r="6" fill="#f59e0b" id="dotMin" />
+ <circle cx="880" cy="128" r="6" fill="#10b981" id="dotExp" />
+        <g id="tabActive">
+          <rect x="898" y="117" width="69" height="22" rx="6" ry="6" fill="rgba(56, 189, 248, 0.14)" stroke="rgba(56, 189, 248, 0.35)" stroke-width="1" />
+          <text x="910" y="121" font-family="sans-serif" font-size="11" font-weight="700" font-style="normal" text-anchor="start" xml:space="preserve" fill="#38bdf8" id="__auto_8" dominant-baseline="hanging">banner.toad</text>
+        </g>
+        <g id="tabTokens">
+          <text x="989" y="121" font-family="sans-serif" font-size="11" font-weight="500" font-style="normal" text-anchor="start" xml:space="preserve" fill="rgba(148, 163, 184, 0.6)" id="__auto_9" dominant-baseline="hanging">theme.toad</text>
+        </g>
+        <g id="liveBadge">
+          <rect x="1050" y="117.5" width="50" height="21" rx="6" ry="6" fill="rgba(16, 185, 129, 0.15)" stroke="rgba(16, 185, 129, 0.35)" stroke-width="1" />
+ <circle cx="1063" cy="128" r="3" fill="#10b981" id="liveDot" filter="url(#filter_7)" />
+          <text x="1072" y="121.5" font-family="sans-serif" font-size="10" font-weight="800" font-style="normal" text-anchor="start" letter-spacing="1" xml:space="preserve" fill="#10b981" id="__auto_10" dominant-baseline="hanging">LIVE</text>
+        </g>
+      </g>
+      <g id="codeBody">
+        <g id="row1">
+          <text x="830" y="173" font-family="sans-serif" font-size="13" font-weight="600" font-style="normal" text-anchor="start" xml:space="preserve" fill="rgba(148, 163, 184, 0.35)" id="__auto_11" dominant-baseline="hanging">1</text>
+          <text x="850" y="173" font-family="sans-serif" font-size="13" font-weight="600" font-style="normal" text-anchor="start" xml:space="preserve" fill="#10b981" id="__auto_12" dominant-baseline="hanging">&gt;accent = #10b981; &gt;cyan = #38bdf8;</text>
+        </g>
+        <g id="row2">
+          <text x="830" y="198" font-family="sans-serif" font-size="13" font-weight="600" font-style="normal" text-anchor="start" xml:space="preserve" fill="rgba(148, 163, 184, 0.35)" id="__auto_13" dominant-baseline="hanging">2</text>
+          <text x="852" y="198" font-family="sans-serif" font-size="13" font-weight="700" font-style="normal" text-anchor="start" xml:space="preserve" fill="#a855f7" id="__auto_14" dominant-baseline="hanging">canvas "SocialBanner" {</text>
+        </g>
+        <g id="row3">
+          <text x="830" y="223" font-family="sans-serif" font-size="13" font-weight="600" font-style="normal" text-anchor="start" xml:space="preserve" fill="rgba(148, 163, 184, 0.35)" id="__auto_15" dominant-baseline="hanging">3</text>
+          <text x="852" y="223" font-family="sans-serif" font-size="13" font-weight="500" font-style="normal" text-anchor="start" xml:space="preserve" fill="#e2e8f0" id="__auto_16" dominant-baseline="hanging"> preset: twitter-header; // 1500x500</text>
+        </g>
+        <g id="row4">
+          <text x="830" y="248" font-family="sans-serif" font-size="13" font-weight="600" font-style="normal" text-anchor="start" xml:space="preserve" fill="rgba(148, 163, 184, 0.35)" id="__auto_17" dominant-baseline="hanging">4</text>
+          <text x="852" y="248" font-family="sans-serif" font-size="13" font-weight="600" font-style="normal" text-anchor="start" xml:space="preserve" fill="#06b6d4" id="__auto_18" dominant-baseline="hanging"> export: [png, svg, psd];</text>
+        </g>
+        <g id="row5">
+          <text x="830" y="273" font-family="sans-serif" font-size="13" font-weight="600" font-style="normal" text-anchor="start" xml:space="preserve" fill="rgba(148, 163, 184, 0.35)" id="__auto_19" dominant-baseline="hanging">5</text>
+          <text x="852" y="273" font-family="sans-serif" font-size="13" font-weight="600" font-style="normal" text-anchor="start" xml:space="preserve" fill="#38bdf8" id="__auto_20" dominant-baseline="hanging"> scales: [1, 2]; // Multi-scale Retina</text>
+        </g>
+        <g id="row6">
+          <text x="830" y="298" font-family="sans-serif" font-size="13" font-weight="600" font-style="normal" text-anchor="start" xml:space="preserve" fill="rgba(148, 163, 184, 0.35)" id="__auto_21" dominant-baseline="hanging">6</text>
+          <text x="852" y="298" font-family="sans-serif" font-size="13" font-weight="700" font-style="normal" text-anchor="start" xml:space="preserve" fill="#a855f7" id="__auto_22" dominant-baseline="hanging">}</text>
+        </g>
+        <g id="row7">
+          <text x="830" y="323" font-family="sans-serif" font-size="13" font-weight="600" font-style="normal" text-anchor="start" xml:space="preserve" fill="rgba(148, 163, 184, 0.35)" id="__auto_23" dominant-baseline="hanging">7</text>
+          <text x="852" y="323" font-family="sans-serif" font-size="13" font-weight="500" font-style="normal" text-anchor="start" xml:space="preserve" fill="#94a3b8" id="__auto_24" dominant-baseline="hanging">stack #card { direction: horizontal; gap: 32px; }</text>
+        </g>
+      </g>
+      <g id="terminalFooter">
+        <rect x="806" y="359" width="624" height="38" fill="rgba(255, 255, 255, 0.025)" stroke="rgba(255, 255, 255, 0.06)" stroke-width="1" />
+ <path d="M20 6 9 17l-5-5" transform="translate(828 371) scale(0.5833333333333334 0.5833333333333334)" fill="none" stroke="#10b981" stroke-width="2.2" id="__auto_25" />
+        <text x="852" y="371" font-family="sans-serif" font-size="11" font-weight="800" font-style="normal" text-anchor="start" letter-spacing="0.8" xml:space="preserve" fill="#10b981" id="__auto_26" dominant-baseline="hanging">COMPILED IN 240ms</text>
+        <text x="951" y="371" font-family="sans-serif" font-size="11" font-weight="500" font-style="normal" text-anchor="start" xml:space="preserve" fill="#94a3b8" id="__auto_27" dominant-baseline="hanging">• 14 PSD Layers • Retina 3000x1000</text>
+      </g>
+    </g>
+  </g>
+</svg>

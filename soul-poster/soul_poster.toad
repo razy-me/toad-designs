@@ -1,0 +1,193 @@
+// ============================================================================
+// VINTAGE SOUL MUSIC POSTER (1979 LIVE RECORDING)
+// Recreated in TOAD DSL
+// Specifications: 1000 x 1400 px • 5:7 Poster Ratio • Multi-Format Export
+// ============================================================================
+
+// --- Semantic Color Tokens ---
+>bgDark          = #131315;
+>cream           = #d1c2aa;
+>terracotta      = #8d2e24;
+
+// --- Organic Warm Pillar Gradients ---
+// Outer columns (1 & 4) have a slightly longer cream transition
+>gradOuter = linear-gradient(180deg, #d2c4ac 0%, #d0c0a6 16%, #c8a58e 28%, #ab5646 48%, #8d2e24 70%, #85261d 100%);
+
+// Inner columns (2 & 3) transition earlier into terracotta, forming an organic concave arc
+>gradInner = linear-gradient(180deg, #d2c4ac 0%, #cebe9f 10%, #bf947c 22%, #a54f40 42%, #8d2e24 64%, #85261d 100%);
+
+// ============================================================================
+// CANVAS CONFIGURATION
+// ============================================================================
+
+canvas "Soul-Poster-1979" {
+  size: 1000px 1400px;
+  background: >bgDark;
+  export: all;
+  quality: 95;
+}
+
+// ============================================================================
+// VERTICAL PILLARS (COLUMNS 1 TO 4) WITH LIGHT CREAM BORDERS
+// ============================================================================
+
+// Column 1 Pillar (Above S) - Stretched S-shaped curve top with cream border
+path #col1Pillar {
+  d: "M 0 260 L 27 260 C 61 260, 64 0, 164 0 L 205 0 L 205 851 L 164 851 C 64 851, 61 1008, 27 1008 L 0 1008 Z";
+  size: 205px 1008px;
+  fill: >gradOuter;
+  stroke: >cream 3.5px;
+  at: (45px, 35px);
+}
+
+// Column 2 Pillar (Above O) - Stretched oval dome top hugging outer O at bottom with cream border
+path #col2Pillar {
+  d: "M 0 240 A 139.5 240 0 0 1 279 240 L 279 963 A 139.5 139.5 0 0 0 0 963 Z";
+  size: 279px 963px;
+  fill: >gradInner;
+  stroke: >cream 3.5px;
+  at: (258px, 35px);
+}
+
+// Column 3 Pillar (Above U) - Stretched double stem with deeper inner rounded U-notch with cream border
+path #col3Pillar {
+  d: "M 0 0 L 99 0 L 99 230 A 10 10 0 0 0 119 230 L 119 0 L 218 0 L 218 851 L 119 851 L 119 1010 A 10 10 0 0 1 99 1010 L 99 851 L 0 851 Z";
+  size: 218px 1020px;
+  fill: >gradInner;
+  stroke: >cream 3.5px;
+  at: (545px, 35px);
+}
+
+// Column 4 Pillar (Above L) - Stretched L-stem top with elongated vertical stem (280px step-down) with cream border
+path #col4Pillar {
+  d: "M 0 0 L 98 0 L 98 280 L 184 280 L 184 1011 L 98 1011 L 98 851 L 0 851 Z";
+  size: 184px 1011px;
+  fill: >gradOuter;
+  stroke: >cream 3.5px;
+  at: (771px, 35px);
+}
+
+// ============================================================================
+// TYPOGRAPHIC LETTERFORMS ("SOUL")
+// ============================================================================
+
+// Letter S - Beautiful, smooth organic Bauhaus curve matching original poster
+path #letterS {
+  d: "M 0 157 L 27 157 C 61 157, 64 0, 164 0 L 205 0 L 205 91 L 191 91 C 157 91, 155 248, 55 248 L 0 248 Z";
+  size: 205px 248px;
+  fill: >cream;
+  at: (45px, 886px);
+}
+
+// Letter O - Outer solid cream circle (Diameter 279px, aligned to baseline)
+circle #letterO {
+  size: 279px;
+  fill: >cream;
+  at: (258px, 858.5px);
+}
+
+// Letter O - Inner concentric terracotta dot (Diameter 62px)
+circle #dotO {
+  size: 62px;
+  fill: >terracotta;
+  at: (366.5px, 967px);
+}
+
+// Letter U - Two 99px stems, 20px inner slot with rounded bottom, 109px outer radius
+path #letterU {
+  d: "M 0 0 L 99 0 L 99 159 A 10 10 0 0 0 119 159 L 119 0 L 218 0 L 218 139 A 109 109 0 0 1 0 139 Z";
+  size: 218px 248px;
+  fill: >cream;
+  at: (545px, 886px);
+}
+
+// Letter L - 98px vertical stem, 88px horizontal base foot
+path #letterL {
+  d: "M 0 0 L 98 0 L 98 160 L 184 160 L 184 248 L 0 248 Z";
+  size: 184px 248px;
+  fill: >cream;
+  at: (771px, 886px);
+}
+
+// ============================================================================
+// BOTTOM INFORMATION TYPOGRAPHY
+// ============================================================================
+
+// Bottom-Left: Session Notes
+text #notesTitle {
+  content: "LISTENING NOTES";
+  font-family: "Arial";
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  color: >cream;
+  at: (45px, 1332px);
+}
+
+text #notesSession {
+  content: "SESSION 11";
+  font-family: "Arial";
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  color: >cream;
+  at: (45px, 1354px);
+}
+
+// Bottom-Right: Stereo Badge
+rect #stereoBox {
+  size: 58px 20px;
+  fill: transparent;
+  stroke: >cream 1.5px;
+  radius: 2px;
+  at: (897px, 1304px);
+}
+
+text #stereoText {
+  content: "STEREO";
+  font-family: "Arial";
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  color: >cream;
+  align: center;
+  size: 58px;
+  at: (897px, 1308px);
+}
+
+// Bottom-Right: Metadata
+text #recordingText {
+  content: "LIVE RECORDING";
+  font-family: "Arial";
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  color: >cream;
+  align: right;
+  size: 200px;
+  at: (755px, 1332px);
+}
+
+text #yearText {
+  content: "1979";
+  font-family: "Arial";
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  color: >cream;
+  align: right;
+  size: 200px;
+  at: (755px, 1352px);
+}
+
+// ============================================================================
+// VINTAGE 35MM FILM GRAIN OVERLAY
+// ============================================================================
+
+image #filmGrain {
+  src: "./grain.png";
+  size: 1000px 1400px;
+  at: (0px, 0px);
+  opacity: 0.22;
+  blend-mode: overlay;
+}

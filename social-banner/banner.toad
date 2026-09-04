@@ -1,0 +1,510 @@
+// ============================================================================
+// TOAD DSL — OFFICIAL SOCIAL MEDIA & REPOSITORY BANNER
+// Specifications: 1500 x 500 px • 3:1 Widescreen • Multi-Scale Retina @2x
+// ============================================================================
+
+// --- Semantic Color Tokens ---
+>bgDark         = #050814;
+>bgMid          = #0b1226;
+>bgDeep         = #040e1a;
+>cardBg         = alpha(#080e1e, 0.82);
+>cardBorder     = alpha(#38bdf8, 0.25);
+>cardBorderMuted= alpha(#ffffff, 0.08);
+>accentGreen    = #10b981;
+>toxicLime      = #ccff00;
+>accentCyan     = #06b6d4;
+>accentBlue     = #38bdf8;
+>accentPurple   = #a855f7;
+>textWhite      = #ffffff;
+>textLight      = #f8fafc;
+>textMuted      = #94a3b8;
+
+// --- Canvas Definition with Rich Midnight Aurora Gradient ---
+canvas "ToadBannerPro" {
+    preset: twitter-header;
+    background: linear-gradient(135deg, >bgDark 0%, >bgMid 50%, >bgDeep 100%);
+    export: all;
+    scales: [1, 2];
+    quality: 100;
+}
+
+// ============================================================================
+// ATMOSPHERIC BACKGROUND LIGHTING & ORBITAL GEOMETRY
+// ============================================================================
+
+// Luminous Ambient Aurora Glows
+circle #auroraCyan {
+    size: 750px;
+    fill: radial-gradient(circle, alpha(>accentCyan, 0.28) 0%, alpha(#0284c7, 0.10) 45%, transparent 75%);
+    at: (980px, -180px);
+}
+
+circle #auroraPurple {
+    size: 650px;
+    fill: radial-gradient(circle, alpha(>accentPurple, 0.20) 0%, alpha(#6366f1, 0.08) 45%, transparent 75%);
+    at: (-80px, 160px);
+}
+
+circle #auroraEmerald {
+    size: 550px;
+    fill: radial-gradient(circle, alpha(>accentGreen, 0.18) 0%, transparent 70%);
+    at: (680px, 220px);
+}
+
+// Delicate Concentric Orbital Rings (Top-Right Depth)
+circle #orbit1 {
+    size: 500px;
+    fill: transparent;
+    stroke: alpha(#38bdf8, 0.08) 1px;
+    at: (1100px, -100px);
+}
+
+circle #orbit2 {
+    size: 720px;
+    fill: transparent;
+    stroke: alpha(#38bdf8, 0.05) 1px;
+    at: (990px, -210px);
+}
+
+circle #orbit3 {
+    size: 940px;
+    fill: transparent;
+    stroke: alpha(#38bdf8, 0.03) 1px;
+    at: (880px, -320px);
+}
+
+// ============================================================================
+// MAIN HERO COMPOSITION (Clean 2-Column Balanced Layout)
+// ============================================================================
+stack #bannerRoot {
+    direction: horizontal;
+    gap: 56px;
+    align: center;
+    size: 1360px hug;
+    at: center of canvas;
+
+    // ========================================================
+    // LEFT SIDE: Brand Lockup, Confident Headline & Clean Chips
+    // ========================================================
+    stack #leftSection {
+        direction: vertical;
+        gap: 18px;
+        size: 680px hug;
+
+        // Brand Status Pill
+        stack #versionBadge {
+            direction: horizontal;
+            gap: 8px;
+            padding: [5px, 14px, 5px, 14px];
+            radius: 999px;
+            fill: alpha(>accentGreen, 0.12);
+            stroke: alpha(>accentGreen, 0.4) 1px;
+            align: center;
+
+            circle #statusDot {
+                size: 7px;
+                fill: >accentGreen;
+                shadow: 0px 0px 6px >accentGreen;
+            }
+
+            text {
+                content: "TOAD DSL • SPATIAL DESIGN COMPILER";
+                font-size: 11px;
+                font-weight: 700;
+                color: >accentGreen;
+                letter-spacing: 1.2px;
+            }
+        }
+
+        // Master Brand Lockup (Cyber-Toad Emblem + Wordmark)
+        stack #brandRow {
+            direction: horizontal;
+            gap: 20px;
+            align: center;
+            size: 680px hug;
+
+            // --- CYBER-TOAD SQUIRCLE SIGNET (92x92) ---
+            group #emblemFrame {
+                size: 92px 92px;
+
+                rect #emblemBase {
+                    size: 92px 92px;
+                    radius: 22px;
+                    fill: #0c1220;
+                    stroke: #1e293b 1.5px;
+                    shadow: 0px 14px 35px rgba(16, 185, 129, 0.35);
+                    at: (0px, 0px);
+                }
+
+                rect #emblemRim {
+                    size: 84px 84px;
+                    radius: 18px;
+                    fill: transparent;
+                    stroke: rgba(16, 185, 129, 0.45) 1px;
+                    at: center of #emblemBase;
+                }
+
+                rect #toadHead {
+                    size: 62px 38px;
+                    radius: 12px;
+                    fill: linear-gradient(135deg, #10b981 0%, #059669 100%);
+                    at: center of #emblemBase offset (0px, 8px);
+                    shadow: 0px 4px 12px rgba(0, 0, 0, 0.35);
+                }
+
+                circle #eyeLeftOuter {
+                    size: 22px;
+                    fill: #0c1220;
+                    stroke: #10b981 2px;
+                    at: center of #emblemBase offset (-16px, -12px);
+                }
+
+                circle #eyeLeftCore {
+                    size: 11px;
+                    fill: >toxicLime;
+                    at: center of #eyeLeftOuter;
+                    shadow: 0px 0px 8px #ccff00;
+                }
+
+                circle #eyeRightOuter {
+                    size: 22px;
+                    fill: #0c1220;
+                    stroke: #10b981 2px;
+                    at: center of #emblemBase offset (16px, -12px);
+                }
+
+                circle #eyeRightCore {
+                    size: 11px;
+                    fill: >toxicLime;
+                    at: center of #eyeRightOuter;
+                    shadow: 0px 0px 8px #ccff00;
+                }
+
+                text #promptGlyph {
+                    content: ">_";
+                    font-size: 12px;
+                    font-weight: 900;
+                    color: #04060d;
+                    at: center of #toadHead offset (0px, -2px);
+                }
+
+                rect #mouthBeam {
+                    size: 26px 4px;
+                    radius: 2px;
+                    fill: #04060d;
+                    at: center of #toadHead offset (0px, 9px);
+                }
+            }
+
+            // Wordmark & Description
+            stack #wordmarkBlock {
+                direction: vertical;
+                gap: 2px;
+
+                stack #wordmarkRow {
+                    direction: horizontal;
+                    gap: 3px;
+                    align: center;
+
+                    text #logoTitle {
+                        content: "toad";
+                        font-size: 56px;
+                        font-weight: 900;
+                        color: >textWhite;
+                        letter-spacing: -2px;
+                    }
+
+                    text #logoSuffix {
+                        content: ".dsl";
+                        font-size: 28px;
+                        font-weight: 800;
+                        color: >accentGreen;
+                    }
+                }
+
+                text #tagline {
+                    content: "CODE YOUR CANVAS • EXPORT NATIVE PSD & SVG";
+                    font-size: 11px;
+                    font-weight: 700;
+                    color: >accentCyan;
+                    letter-spacing: 1.8px;
+                }
+            }
+        }
+
+        // Bold Confident Headline
+        text #heroHeadline {
+            content: "Declarative design. Native vector compilation.";
+            font-size: 25px;
+            font-weight: 800;
+            color: >textLight;
+            letter-spacing: -0.8px;
+            size: 680px auto;
+        }
+
+        // Clean Subtitle
+        text #heroDesc {
+            content: "A high-performance spatial DSL that compiles code directly into pixel-perfect SVGs, Skia-accelerated images, and fully editable layered Photoshop PSDs.";
+            font-size: 15px;
+            font-weight: 400;
+            color: >textMuted;
+            line-height: 1.55;
+            size: 650px auto;
+        }
+
+        // Clean Modern Feature Chips (Only 3 high-impact items)
+        stack #featureChips {
+            direction: horizontal;
+            gap: 12px;
+            size: 680px hug;
+
+            stack #chip1 {
+                direction: horizontal;
+                gap: 8px;
+                padding: [8px, 16px, 8px, 16px];
+                radius: 10px;
+                fill: alpha(#ffffff, 0.05);
+                stroke: >cardBorderMuted 1px;
+                align: center;
+
+                icon {
+                    iconName: "settings";
+                    size: 14px;
+                    stroke: >accentBlue 2px;
+                }
+
+                text {
+                    content: "Skia 2D Core";
+                    font-size: 13px;
+                    font-weight: 600;
+                    color: >accentBlue;
+                }
+            }
+
+            stack #chip2 {
+                direction: horizontal;
+                gap: 8px;
+                padding: [8px, 16px, 8px, 16px];
+                radius: 10px;
+                fill: alpha(#ffffff, 0.05);
+                stroke: >cardBorderMuted 1px;
+                align: center;
+
+                icon {
+                    iconName: "arrow-right";
+                    size: 14px;
+                    stroke: >accentPurple 2px;
+                }
+
+                text {
+                    content: "Layered PSDs";
+                    font-size: 13px;
+                    font-weight: 600;
+                    color: >accentPurple;
+                }
+            }
+
+            stack #chip3 {
+                direction: horizontal;
+                gap: 8px;
+                padding: [8px, 16px, 8px, 16px];
+                radius: 10px;
+                fill: alpha(#ffffff, 0.05);
+                stroke: >cardBorderMuted 1px;
+                align: center;
+
+                icon {
+                    iconName: "check";
+                    size: 14px;
+                    stroke: >accentGreen 2.2px;
+                }
+
+                text {
+                    content: "4-Pass Solver";
+                    font-size: 13px;
+                    font-weight: 600;
+                    color: >accentGreen;
+                }
+            }
+        }
+    }
+
+    // ========================================================
+    // RIGHT SIDE: Frosted Glassmorphic IDE Code Window
+    // ========================================================
+    stack #codeWindow {
+        direction: vertical;
+        size: 624px hug;
+        radius: 20px;
+        fill: >cardBg;
+        stroke: >cardBorder 1px;
+        shadow: 0 30px 70px rgba(0, 0, 0, 0.75);
+
+        // Window Chrome Bar
+        stack #windowHeader {
+            direction: horizontal;
+            gap: 12px;
+            padding: [14px, 20px, 14px, 20px];
+            fill: alpha(#ffffff, 0.03);
+            stroke: alpha(#ffffff, 0.07) 1px;
+            align: center;
+            size: 100% hug;
+
+            // Traffic Light Dots
+            circle #dotClose { size: 12px; fill: #ef4444; }
+            circle #dotMin   { size: 12px; fill: #f59e0b; }
+            circle #dotExp   { size: 12px; fill: #10b981; }
+
+            // Active Tab
+            stack #tabActive {
+                direction: horizontal;
+                gap: 6px;
+                padding: [4px, 12px, 4px, 12px];
+                radius: 6px;
+                fill: alpha(#38bdf8, 0.14);
+                stroke: alpha(#38bdf8, 0.35) 1px;
+
+                text {
+                    content: "banner.toad";
+                    font-size: 11px;
+                    font-weight: 700;
+                    color: >accentBlue;
+                }
+            }
+
+            // Inactive Tab
+            stack #tabTokens {
+                direction: horizontal;
+                padding: [4px, 10px, 4px, 10px];
+
+                text {
+                    content: "theme.toad";
+                    font-size: 11px;
+                    font-weight: 500;
+                    color: alpha(>textMuted, 0.6);
+                }
+            }
+
+            // Live Pill
+            stack #liveBadge {
+                direction: horizontal;
+                gap: 6px;
+                padding: [4px, 10px, 4px, 10px];
+                radius: 6px;
+                fill: alpha(>accentGreen, 0.15);
+                stroke: alpha(>accentGreen, 0.35) 1px;
+                align: center;
+
+                circle #liveDot {
+                    size: 6px;
+                    fill: >accentGreen;
+                    shadow: 0px 0px 6px >accentGreen;
+                }
+
+                text {
+                    content: "LIVE";
+                    font-size: 10px;
+                    font-weight: 800;
+                    color: >accentGreen;
+                    letter-spacing: 1px;
+                }
+            }
+        }
+
+        // Code Editor Body (Clean, perfectly formatted)
+        stack #codeBody {
+            direction: vertical;
+            padding: [20px, 24px, 20px, 24px];
+            gap: 9px;
+            size: 100% hug;
+
+            // Row 1
+            stack #row1 {
+                direction: horizontal;
+                gap: 16px;
+                text { content: "1"; font-size: 13px; font-weight: 600; color: alpha(>textMuted, 0.35); }
+                text { content: ">accent = #10b981;   >cyan = #38bdf8;"; font-size: 13px; font-weight: 600; color: >accentGreen; }
+            }
+
+            // Row 2
+            stack #row2 {
+                direction: horizontal;
+                gap: 16px;
+                text { content: "2"; font-size: 13px; font-weight: 600; color: alpha(>textMuted, 0.35); }
+                text { content: "canvas \"SocialBanner\" {"; font-size: 13px; font-weight: 700; color: >accentPurple; }
+            }
+
+            // Row 3
+            stack #row3 {
+                direction: horizontal;
+                gap: 16px;
+                text { content: "3"; font-size: 13px; font-weight: 600; color: alpha(>textMuted, 0.35); }
+                text { content: "    preset: twitter-header;  // 1500x500"; font-size: 13px; font-weight: 500; color: #e2e8f0; }
+            }
+
+            // Row 4
+            stack #row4 {
+                direction: horizontal;
+                gap: 16px;
+                text { content: "4"; font-size: 13px; font-weight: 600; color: alpha(>textMuted, 0.35); }
+                text { content: "    export: [png, svg, psd];"; font-size: 13px; font-weight: 600; color: >accentCyan; }
+            }
+
+            // Row 5
+            stack #row5 {
+                direction: horizontal;
+                gap: 16px;
+                text { content: "5"; font-size: 13px; font-weight: 600; color: alpha(>textMuted, 0.35); }
+                text { content: "    scales: [1, 2];  // Multi-scale Retina"; font-size: 13px; font-weight: 600; color: >accentBlue; }
+            }
+
+            // Row 6
+            stack #row6 {
+                direction: horizontal;
+                gap: 16px;
+                text { content: "6"; font-size: 13px; font-weight: 600; color: alpha(>textMuted, 0.35); }
+                text { content: "}"; font-size: 13px; font-weight: 700; color: >accentPurple; }
+            }
+
+            // Row 7
+            stack #row7 {
+                direction: horizontal;
+                gap: 16px;
+                text { content: "7"; font-size: 13px; font-weight: 600; color: alpha(>textMuted, 0.35); }
+                text { content: "stack #card { direction: horizontal; gap: 32px; }"; font-size: 13px; font-weight: 500; color: >textMuted; }
+            }
+        }
+
+        // Terminal Footer Bar
+        stack #terminalFooter {
+            direction: horizontal;
+            padding: [12px, 22px, 12px, 22px];
+            fill: alpha(#ffffff, 0.025);
+            stroke: alpha(#ffffff, 0.06) 1px;
+            gap: 10px;
+            align: center;
+            size: 100% hug;
+
+            icon {
+                iconName: "check";
+                size: 14px;
+                stroke: >accentGreen 2.2px;
+            }
+
+            text {
+                content: "COMPILED IN 240ms";
+                font-size: 11px;
+                font-weight: 800;
+                color: >accentGreen;
+                letter-spacing: 0.8px;
+            }
+
+            text {
+                content: "•  14 PSD Layers  •  Retina 3000x1000";
+                font-size: 11px;
+                font-weight: 500;
+                color: >textMuted;
+            }
+        }
+    }
+}

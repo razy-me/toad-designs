@@ -1,0 +1,9 @@
+{
+  "name": "dsgn-project-1",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "dsgn main.dsgn --watch",
+    "build": "dsgn main.dsgn --format all"
+  }
+}
