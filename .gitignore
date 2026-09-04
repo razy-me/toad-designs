@@ -1,3 +1,13 @@
+# Photoshop files (heavy compilation targets)
+*.psd
+
+# 2x exports
+*@2x*
+
+# Build and scratch
+dist/
+scratch/
+
 # OS / editor noise
 .DS_Store
 Thumbs.db
