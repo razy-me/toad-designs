@@ -1,14 +1,49 @@
-# TOAD Designs & Showcases
+# 🐸 TOAD Designs & Showcases
 
-Collection of design systems, posters, banners, and vector art built with the [TOAD DSL](https://github.com/razy-me/toad).
+A curated collection of design systems, posters, banners, and vector artwork crafted with the [TOAD DSL](https://github.com/razy-me/toad) (Declarative Visual Design Language & Compiler).
 
-## Projects
+---
 
-- **[bauhaus-1923](./bauhaus-1923/)** � Geometric Bauhaus exhibition poster recreation.
-- **[kamekura-tokyo-poster](./kamekura-tokyo-poster/)** � Yusaku Kamekura Tokyo 1964 Olympic poster design.
-- **[social-banner](./social-banner/)** � GitHub / social preview header cards.
-- **[soul-poster](./soul-poster/)** � Expressive gradient and textured poster.
+## 🎨 Public Showcases
 
-## Private Designs
+| Project | Preview | Description | Source & Formats |
+| :--- | :---: | :--- | :--- |
+| **[Bauhaus 1923](./bauhaus-1923/)** | <img src="./bauhaus-1923/bauhaus_1923.webp" width="160" alt="Bauhaus 1923" /> | Geometric Bauhaus exhibition poster recreation highlighting layout math, color blocking, and typography. | [`.toad`](./bauhaus-1923/bauhaus_1923.toad) · [SVG](./bauhaus-1923/bauhaus_1923.svg) · [PSD](./bauhaus-1923/bauhaus_1923.psd) · PNG / WebP |
+| **[Kamekura Tokyo 1964](./kamekura-tokyo-poster/)** | <img src="./kamekura-tokyo-poster/kamekura_poster.webp" width="160" alt="Kamekura Tokyo 1964 Poster" /> | Yusaku Kamekura's iconic Tokyo 1964 Olympic poster recreated with textured paper compositing and emblem layout. | [`.toad`](./kamekura-tokyo-poster/kamekura_poster.toad) · [SVG](./kamekura-tokyo-poster/kamekura_poster.svg) · [PSD](./kamekura-tokyo-poster/kamekura_poster.psd) · PNG / WebP |
+| **[Social Banner](./social-banner/)** | <img src="./social-banner/banner.webp" width="160" alt="Social Banner" /> | High-impact GitHub repository and social preview cards showcasing container stacks, gradients, and badges. | [`.toad`](./social-banner/banner.toad) · [SVG](./social-banner/banner.svg) · [PSD](./social-banner/banner.psd) · PNG / WebP |
+| **[Soul Poster](./soul-poster/)** | <img src="./soul-poster/soul_poster.webp" width="160" alt="Soul Poster" /> | Expressive design demonstrating mesh/radial gradient glows, custom texture blending, and typography. | [`.toad`](./soul-poster/soul_poster.toad) · [SVG](./soul-poster/soul_poster.svg) · [PSD](./soul-poster/soul_poster.psd) · PNG / WebP |
 
-Confidential and client-specific designs are tracked in the private submodule under [private/](./private).
+---
+
+## 🔒 Private Projects
+
+Client projects and proprietary design systems (such as the **Vario** branding, banners, and Nova UI suite) are isolated in a private Git submodule under:
+
+👉 **[`private/`](./private)** *(Accessible only to authorized collaborators via [toad-designs-private](https://github.com/razy-me/toad-designs-private))*
+
+---
+
+## 🛠️ Working with this Repository
+
+### Clone with Submodules
+To clone this repository including the private submodule (requires repository permissions):
+
+```bash
+git clone --recurse-submodules https://github.com/razy-me/toad-designs.git
+```
+
+If already cloned:
+```bash
+git submodule update --init --recursive
+```
+
+### Compiling Designs with TOAD
+Compile any `.toad` design file using the TOAD CLI compiler:
+
+```bash
+# Render to SVG & PNG
+toad build path/to/design.toad
+
+# Export all targets (SVG, PSD, PNG, WebP)
+toad export path/to/design.toad
+```
