@@ -2,6 +2,10 @@
 
 A curated collection of design systems, posters, banners, and vector artwork crafted with the [TOAD DSL](https://github.com/razy-me/toad) (Declarative Visual Design Language & Compiler).
 
+> [!NOTE]
+> **Attribution & Design Studies**:
+> Several designs and motifs in this repository are not original creations, but deliberate **1:1 design studies and digital recreations** of iconic historical posters (e.g., Herbert Bayer's Bauhaus exhibition poster, Yusaku Kamekura's Tokyo 1964 Olympic poster) or online inspirations. They serve as real-world stress tests and benchmarks to demonstrate the layout expressiveness, typography engine, and rendering fidelity of the TOAD compiler.
+
 ---
 
 ## 🎨 Public Showcases
