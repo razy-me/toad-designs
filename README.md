@@ -8,7 +8,6 @@ Collection of design systems, posters, banners, and vector art built with the [T
 - **[kamekura-tokyo-poster](./kamekura-tokyo-poster/)** — Yusaku Kamekura Tokyo 1964 Olympic poster design.
 - **[social-banner](./social-banner/)** — GitHub / social preview header cards.
 - **[soul-poster](./soul-poster/)** — Expressive gradient and textured poster.
-- **[dsgn-project-1](./dsgn-project-1/)** — Minimal showcase project.
 
 ## Private Designs
 
