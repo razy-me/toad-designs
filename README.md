@@ -8,7 +8,7 @@ A curated collection of design systems, posters, banners, and vector artwork cra
 
 ---
 
-## 🎨 Public Showcases
+## 🎨 Showcases
 
 | Project | Preview | Description | Source & Formats |
 | :--- | :---: | :--- | :--- |
@@ -19,26 +19,11 @@ A curated collection of design systems, posters, banners, and vector artwork cra
 
 ---
 
-## 🔒 Private Projects
-
-Client projects and proprietary design systems (such as the **Vario** branding, banners, and Nova UI suite) are isolated in a private Git submodule under:
-
-👉 **[`private/`](./private)** *(Accessible only to authorized collaborators via [toad-designs-private](https://github.com/razy-me/toad-designs-private))*
-
----
-
 ## 🛠️ Working with this Repository
 
-### Clone with Submodules
-To clone this repository including the private submodule (requires repository permissions):
-
+### Clone
 ```bash
-git clone --recurse-submodules https://github.com/razy-me/toad-designs.git
-```
-
-If already cloned:
-```bash
-git submodule update --init --recursive
+git clone https://github.com/razy-me/toad-designs.git
 ```
 
 ### Compiling Designs with TOAD
