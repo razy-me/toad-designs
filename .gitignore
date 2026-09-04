@@ -1,5 +1,6 @@
-# Photoshop files (heavy compilation targets)
+# Heavy / generated compilation targets
 *.psd
+*.svg
 
 # 2x exports
 *@2x*
