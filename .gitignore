@@ -11,3 +11,6 @@ Thumbs.db
 .idea/
 .vscode/
 *.log
+
+# Fonts directory for local PSD/Photopea drag & drop
+fonts/
