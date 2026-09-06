@@ -2,6 +2,9 @@
 
 A curated collection of design systems, posters, banners, and vector artwork crafted with the [TOAD DSL](https://github.com/razy-me/toad) (Declarative Visual Design Language & Compiler).
 
+> [!IMPORTANT]
+> **100% Made with TOAD** — Every single design in this repository, from logo systems to print posters, is created entirely in the TOAD DSL (`.toad` source files). No Figma, no Illustrator, no manual pixel work — pure declarative code compiled to SVG, PSD, PNG, and WebP by the TOAD compiler.
+
 > [!NOTE]
 > **Attribution & Design Studies**:
 > Several designs and motifs in this repository are not original creations, but deliberate **1:1 design studies and digital recreations** of iconic historical posters (e.g., Herbert Bayer's Bauhaus exhibition poster, Yusaku Kamekura's Tokyo 1964 Olympic poster) or online inspirations. They serve as real-world stress tests and benchmarks to demonstrate the layout expressiveness, typography engine, and rendering fidelity of the TOAD compiler.
