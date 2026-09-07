@@ -264,13 +264,13 @@ stack #bannerRoot {
             group #chip1 {
                 size: 136px 30px;
                 radius: 4px;
-                fill: alpha(#ffffff, 0.04);
+                fill: alpha(#ffffff, 0.03);
                 stroke: >borderMuted 1px;
 
                 icon {
                     iconName: "settings";
                     size: 13px;
-                    stroke: >accentBlue 1.8px;
+                    stroke: >textLight 1.8px;
                     at: (12px, 8.5px);
                 }
 
@@ -279,7 +279,7 @@ stack #bannerRoot {
                     font-family: >fontMono;
                     font-size: 12px;
                     font-weight: 700;
-                    color: >accentBlue;
+                    color: >textLight;
                     at: (33px, 12px);
                 }
             }
@@ -287,8 +287,8 @@ stack #bannerRoot {
             group #chip2 {
                 size: 154px 30px;
                 radius: 4px;
-                fill: alpha(#ffffff, 0.04);
-                stroke: >borderMuted 1px;
+                fill: alpha(>accentEmerald, 0.08);
+                stroke: alpha(>accentEmerald, 0.35) 1px;
 
                 icon {
                     iconName: "check";
@@ -310,13 +310,13 @@ stack #bannerRoot {
             group #chip3 {
                 size: 188px 30px;
                 radius: 4px;
-                fill: alpha(#ffffff, 0.04);
+                fill: alpha(#ffffff, 0.03);
                 stroke: >borderMuted 1px;
 
                 icon {
                     iconName: "arrow-right";
                     size: 13px;
-                    stroke: >cyanLaser 1.8px;
+                    stroke: >textLight 1.8px;
                     at: (12px, 8.5px);
                 }
 
@@ -325,7 +325,7 @@ stack #bannerRoot {
                     font-family: >fontMono;
                     font-size: 12px;
                     font-weight: 700;
-                    color: >cyanLaser;
+                    color: >textLight;
                     at: (33px, 12px);
                 }
             }
@@ -333,13 +333,13 @@ stack #bannerRoot {
             group #chip4 {
                 size: 172px 30px;
                 radius: 4px;
-                fill: alpha(#ffffff, 0.04);
+                fill: alpha(#ffffff, 0.03);
                 stroke: >borderMuted 1px;
 
                 icon {
                     iconName: "settings";
                     size: 13px;
-                    stroke: >accentPurple 1.8px;
+                    stroke: >textLight 1.8px;
                     at: (12px, 8.5px);
                 }
 
@@ -348,7 +348,7 @@ stack #bannerRoot {
                     font-family: >fontMono;
                     font-size: 12px;
                     font-weight: 700;
-                    color: >accentPurple;
+                    color: >textLight;
                     at: (33px, 12px);
                 }
             }
