@@ -159,84 +159,41 @@ stack #bannerRoot {
             align: center;
             size: 730px hug;
 
-            // --- High-Precision Cyber-Toad Vector Emblem (86x86) ---
+            // --- Official 2D Fusion Tile Toad Logo Signet (86x86) ---
             group #emblemFrame {
                 size: 86px 86px;
 
-                // Tactical Outer Chassis
-                rect #emblemBase {
+                // Base Emerald Squircle Chassis
+                rect #tileChassis {
                     size: 86px 86px;
-                    radius: 12px;
-                    fill: #081124;
-                    stroke: >borderTactical 1.5px;
-                    shadow: 0px 8px 24px alpha(#00f0ff, 0.16);
+                    radius: 25px;
+                    fill: >accentEmerald;
+                    shadow: 0px 8px 24px alpha(>accentEmerald, 0.25);
                     at: (0px, 0px);
                 }
 
-                // Inner Optical Aperture Rim
-                rect #emblemInner {
-                    size: 76px 76px;
-                    radius: 8px;
-                    fill: transparent;
-                    stroke: alpha(>accentEmerald, 0.35) 1px;
-                    at: center of #emblemBase;
-                }
+                // White Toad Silhouette & Syntax Chevron
+                group #silhBrand {
+                    size: 60px 42px;
+                    at: (13px, 22px);
 
-                // Solid Toad Visor Plate
-                rect #toadVisor {
-                    size: 58px 34px;
-                    radius: 7px;
-                    fill: linear-gradient(135deg, #10b981 0%, #047857 100%);
-                    at: center of #emblemBase offset (0px, 9px);
-                    shadow: 0px 3px 10px alpha(#000000, 0.45);
-                }
+                    // Left & Right Eye Domes
+                    circle { size: 21px; fill: >textWhite; at: (5px, 0px); }
+                    circle { size: 21px; fill: >textWhite; at: (34px, 0px); }
 
-                // Left Optical Sensor Ring & Glow Core
-                circle #eyeLeftOuter {
-                    size: 20px;
-                    fill: #050b18;
-                    stroke: >cyanLaser 1.5px;
-                    at: center of #emblemBase offset (-15px, -11px);
-                }
+                    // Body Capsule
+                    rect { size: 60px 30px; radius: 15px; fill: >textWhite; at: (0px, 12px); }
 
-                circle #eyeLeftCore {
-                    size: 9px;
-                    fill: >toxicLime;
-                    at: center of #eyeLeftOuter;
-                    shadow: 0px 0px 8px >toxicLime;
-                }
-
-                // Right Optical Sensor Ring & Glow Core
-                circle #eyeRightOuter {
-                    size: 20px;
-                    fill: #050b18;
-                    stroke: >cyanLaser 1.5px;
-                    at: center of #emblemBase offset (15px, -11px);
-                }
-
-                circle #eyeRightCore {
-                    size: 9px;
-                    fill: >toxicLime;
-                    at: center of #eyeRightOuter;
-                    shadow: 0px 0px 8px >toxicLime;
-                }
-
-                // Terminal Shell Prompt Inside Visor
-                text #promptGlyph {
-                    content: ">_";
-                    font-family: >fontMono;
-                    font-size: 13px;
-                    font-weight: 700;
-                    color: #030712;
-                    at: center of #toadVisor offset (0px, -2px);
-                }
-
-                // Horizontal Data Bus Beam
-                rect #mouthBeam {
-                    size: 24px 3px;
-                    radius: 1.5px;
-                    fill: #030712;
-                    at: center of #toadVisor offset (0px, 8px);
+                    // Negative Space Syntax Chevron (">")
+                    path {
+                        d: "M 26 21 L 34 27 L 26 33";
+                        size: 60px 42px;
+                        stroke: >accentEmerald 5.5px;
+                        stroke-cap: round;
+                        stroke-join: round;
+                        fill: transparent;
+                        at: (0px, 0px);
+                    }
                 }
             }
 
