@@ -14,3 +14,18 @@ Thumbs.db
 
 # Fonts directory for local PSD/Photopea drag & drop
 fonts/
+
+# Rendered / compiled export files (only keep .toad sources and static input textures)
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.svg
+*.psd
+*.pdf
+
+# Allow static texture / background inputs
+!*grain*
+!*texture*
+!*paper*
+
