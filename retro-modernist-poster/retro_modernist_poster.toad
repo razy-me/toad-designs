@@ -1,0 +1,373 @@
+// ============================================================================
+// 🧬 TOAD MULTI-DNA INSPIRATION MATRIX (Min 3 Personas + Min 3 Corporate Systems)
+// ----------------------------------------------------------------------------
+// 🎭 CREATIVE PERSONAS (the_seed/09_CREATIVE_PERSONAS_AND_STYLES/):
+//   1. felix_aero_lindner -> Pure 2D constructivist circle & orbital geometry, subtractive negative cuts
+//   2. darius_cole -> Warm Mid-Century Modern tactile earth tones, vintage screenprint warmth
+//   3. jessica_sterling -> Precise Swiss spatial proportions, disciplined margins, hairline rules
+//   4. astrid_vinter -> 70s topological acoustic rhythms, concentric radial waves, kinetic flow
+// 🏢 CORPORATE DESIGN SYSTEMS (the_seed/10_CORPORATE_DESIGN_SYSTEMS/):
+//   1. metro_transvia -> Swiss modernist typography discipline, high contrast, clean weights
+//   2. filmforum_arthouse -> Cultural poster atmosphere, refined minimal title lockup
+//   3. rostwerk_kaffee -> Organic warm tactile tokens (unbleached paper, roasted charcoal, terracotta)
+//   4. schoko_kuvertuere -> Swiss precision craftsmanship, disciplined layout margins, timeless proportion
+// ============================================================================
+
+// --- Semantic Color Tokens (Mid-Century Warmth & 70s Swiss Concrete Art) ---
+>paperCream   = #F4EFE6;
+>terracotta   = #CF4A2C;
+>mustardGold  = #E5A83B;
+>slateTeal    = #264653;
+>oliveSage    = #6B8168;
+>carbon       = #1C2321;
+>fontSans     = "Arial, Helvetica, sans-serif";
+
+// ============================================================================
+// CANVAS CONFIGURATION (Ratio 3:5 • Pure Fine Art Wall Print)
+// ============================================================================
+
+canvas "Orbital-Harmonics-1974" {
+  size: 1500px 2500px;
+  background: >paperCream;
+  font-family: >fontSans;
+  export: psd, png;
+  quality: 100;
+}
+
+// ============================================================================
+// MINIMALIST SWISS REGISTRATION MARKS (Fine Art Print Edition)
+// ============================================================================
+
+// Top-Left Cross
+rect #regTLH { size: 28px 1px; fill: >carbon; at: (66px, 80px); }
+rect #regTLV { size: 1px 28px; fill: >carbon; at: (80px, 66px); }
+
+// Top-Right Cross
+rect #regTRH { size: 28px 1px; fill: >carbon; at: (1406px, 80px); }
+rect #regTRV { size: 1px 28px; fill: >carbon; at: (1420px, 66px); }
+
+// Bottom-Left Cross
+rect #regBLH { size: 28px 1px; fill: >carbon; at: (66px, 2420px); }
+rect #regBLV { size: 1px 28px; fill: >carbon; at: (80px, 2406px); }
+
+// Bottom-Right Cross
+rect #regBRH { size: 28px 1px; fill: >carbon; at: (1406px, 2420px); }
+rect #regBRV { size: 1px 28px; fill: >carbon; at: (1420px, 2406px); }
+
+// ============================================================================
+// TOP HEADER: REFINED MINIMALIST TITLE LOCKUP
+// ============================================================================
+
+text #posterTitle {
+  content: "ORBITAL HARMONICS & FORM";
+  font-size: 26px;
+  font-weight: 800;
+  letter-spacing: 4px;
+  color: >carbon;
+  at: (100px, 94px);
+}
+
+text #posterEdition {
+  content: "KUNSTHALLE BASEL • 1974";
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: >terracotta;
+  align: right;
+  size: 400px;
+  at: (1000px, 102px);
+}
+
+rect #topHeaderRule {
+  size: 1300px 2px;
+  fill: >carbon;
+  at: (100px, 136px);
+}
+
+// ============================================================================
+// MONUMENTAL ARTWORK: ORBITAL HARMONICS & KINETIC CELESTIAL DISCS
+// (Y: 200px to 2260px • Over 2000px of Pure Modernist Geometry)
+// Inspired by Josef Müller-Brockmann, Max Bill & Mid-Century Space-Age Abstraction
+// ============================================================================
+
+// ----------------------------------------------------------------------------
+// 1. ACOUSTIC RADIAL WAVE ARCS (Müller-Brockmann Concentric Vektoren)
+// Radiating from Primary Solar Center (600, 820)
+// ----------------------------------------------------------------------------
+
+circle #acousticArc1 {
+  size: 880px;
+  fill: none;
+  stroke: >carbon 1.5px;
+  at: (160px, 380px);
+}
+
+circle #acousticArc2 {
+  size: 1060px;
+  fill: none;
+  stroke: >mustardGold 2px;
+  at: (70px, 290px);
+}
+
+circle #acousticArc3 {
+  size: 1240px;
+  fill: none;
+  stroke: >terracotta 2px;
+  at: (-20px, 200px);
+}
+
+circle #acousticArc4 {
+  size: 1420px;
+  fill: none;
+  stroke: >slateTeal 1.5px;
+  at: (-110px, 110px);
+}
+
+// ----------------------------------------------------------------------------
+// 2. PRIMARY CELESTIAL ORB (Upper-Left Main Center • Terracotta & Gold)
+// ----------------------------------------------------------------------------
+
+// Outer Terracotta Disc (Diameter 660px)
+circle #orb1Back {
+  size: 660px;
+  fill: >terracotta;
+  at: (270px, 490px);
+}
+
+// Concentric Paper Cut Ring
+circle #orb1CutRing {
+  size: 500px;
+  fill: none;
+  stroke: >paperCream 26px;
+  at: (350px, 570px);
+}
+
+// Mustard Gold Inner Sun Disc
+circle #orb1Inner {
+  size: 380px;
+  fill: >mustardGold;
+  at: (410px, 630px);
+}
+
+// Inner Charcoal Core
+circle #orb1Core {
+  size: 200px;
+  fill: >carbon;
+  at: (500px, 720px);
+}
+
+// Small Paper Center Dot
+circle #orb1Dot {
+  size: 60px;
+  fill: >paperCream;
+  at: (570px, 790px);
+}
+
+// Kinetic Slats across Primary Orb (Felix Lindner Subtractive Cuts)
+rect #slatA1 { size: 680px 10px; fill: >paperCream; at: (260px, 710px); }
+rect #slatA2 { size: 680px 10px; fill: >paperCream; at: (260px, 755px); }
+rect #slatA3 { size: 680px 10px; fill: >paperCream; at: (260px, 800px); }
+rect #slatA4 { size: 680px 10px; fill: >paperCream; at: (260px, 845px); }
+rect #slatA5 { size: 680px 10px; fill: >paperCream; at: (260px, 890px); }
+
+// ----------------------------------------------------------------------------
+// 3. SECONDARY COUNTER-ORBITAL MOON (Lower-Right Center • Slate Teal & Olive)
+// Intersecting Dynamic Counterweight (Diameter 600px)
+// ----------------------------------------------------------------------------
+
+// Slate Teal Disc
+circle #orb2Back {
+  size: 600px;
+  fill: >slateTeal;
+  at: (680px, 1080px);
+}
+
+// Paper Inset Ring
+circle #orb2Ring {
+  size: 460px;
+  fill: none;
+  stroke: >paperCream 22px;
+  at: (750px, 1150px);
+}
+
+// Olive Sage Core Disc
+circle #orb2Inner {
+  size: 340px;
+  fill: >oliveSage;
+  at: (810px, 1210px);
+}
+
+// Terracotta Pupil Core
+circle #orb2Core {
+  size: 180px;
+  fill: >terracotta;
+  at: (890px, 1290px);
+}
+
+// Central Carbon Eye
+circle #orb2Eye {
+  size: 70px;
+  fill: >carbon;
+  at: (945px, 1345px);
+}
+
+// ----------------------------------------------------------------------------
+// 4. SATELLITE SOLAR DISC (Upper-Right Satellite • Golden Ochre)
+// ----------------------------------------------------------------------------
+
+circle #orb3Back {
+  size: 340px;
+  fill: >mustardGold;
+  at: (980px, 340px);
+}
+
+circle #orb3Ring {
+  size: 240px;
+  fill: none;
+  stroke: >paperCream 16px;
+  at: (1030px, 390px);
+}
+
+circle #orb3Core {
+  size: 140px;
+  fill: >carbon;
+  at: (1080px, 440px);
+}
+
+circle #orb3Dot {
+  size: 44px;
+  fill: >terracotta;
+  at: (1128px, 488px);
+}
+
+// ----------------------------------------------------------------------------
+// 5. LOWER SATELLITE CRESCENT (Lower-Left Accent • Olive Sage)
+// ----------------------------------------------------------------------------
+
+circle #orb4Back {
+  size: 280px;
+  fill: >oliveSage;
+  at: (160px, 1420px);
+}
+
+circle #orb4Ring {
+  size: 190px;
+  fill: none;
+  stroke: >paperCream 14px;
+  at: (205px, 1465px);
+}
+
+circle #orb4Core {
+  size: 110px;
+  fill: >mustardGold;
+  at: (245px, 1505px);
+}
+
+// ----------------------------------------------------------------------------
+// 6. DYNAMIC 45-DEGREE CONSTRUCTIVIST AXIS & TANGENT RAYS
+// ----------------------------------------------------------------------------
+
+// Main 45° Diagonal Ray linking Top-Left to Bottom-Right
+path #diagonalAxis {
+  d: "M 140 320 L 1360 1880";
+  stroke: >carbon 2px;
+  fill: none;
+  at: (0, 0);
+}
+
+// Parallel Accent Ray
+path #diagonalRay2 {
+  d: "M 240 260 L 1400 1740";
+  stroke: >terracotta 1.5px;
+  fill: none;
+  at: (0, 0);
+}
+
+// Horizontal Tangent Ray Crossing Center
+rect #centerHairline {
+  size: 1300px 1px;
+  fill: >carbon;
+  at: (100px, 1020px);
+}
+
+// ----------------------------------------------------------------------------
+// 7. STEPPED CHROMATIC BASE HORIZON (Mathematical Modular Scale)
+// Expanding Widths: 460px -> 680px -> 900px -> 1100px -> 1300px
+// ----------------------------------------------------------------------------
+
+rect #baseStep1 { size: 460px 18px; fill: >terracotta; at: (100px, 1920px); }
+rect #baseStep2 { size: 680px 18px; fill: >mustardGold; at: (100px, 1960px); }
+rect #baseStep3 { size: 900px 18px; fill: >oliveSage; at: (100px, 2000px); }
+rect #baseStep4 { size: 1100px 18px; fill: >slateTeal; at: (100px, 2040px); }
+rect #baseStep5 { size: 1300px 18px; fill: >carbon; at: (100px, 2080px); }
+
+// Color Palette Calibration Indicators
+rect #colorDot1 { size: 18px 18px; fill: >terracotta; radius: 9px; at: (100px, 2140px); }
+rect #colorDot2 { size: 18px 18px; fill: >mustardGold; radius: 9px; at: (132px, 2140px); }
+rect #colorDot3 { size: 18px 18px; fill: >oliveSage; radius: 9px; at: (164px, 2140px); }
+rect #colorDot4 { size: 18px 18px; fill: >slateTeal; radius: 9px; at: (196px, 2140px); }
+rect #colorDot5 { size: 18px 18px; fill: >carbon; radius: 9px; at: (228px, 2140px); }
+
+// Discreet Modular Notation
+text #modularNote {
+  content: "MODUL-SYSTEM 1974 // SERIE 05 • KINETISCHE ORBITALE";
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: >carbon;
+  align: right;
+  size: 500px;
+  at: (900px, 2144px);
+}
+
+// ============================================================================
+// BOTTOM MINIMALIST COLOPHON (Quiet, Elegant Gallery Baseline)
+// ============================================================================
+
+rect #bottomRule {
+  size: 1300px 2px;
+  fill: >carbon;
+  at: (100px, 2340px);
+}
+
+text #colophonLeft {
+  content: "CONSTRUCTIVE ART SERIES // VARIATION V";
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  color: >carbon;
+  at: (100px, 2368px);
+}
+
+text #colophonCenter {
+  content: "•   •   •";
+  font-size: 16px;
+  font-weight: 800;
+  color: >terracotta;
+  align: center;
+  size: 200px;
+  at: (650px, 2366px);
+}
+
+text #colophonRight {
+  content: "BASEL • SWITZERLAND • 1974";
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  color: >carbon;
+  align: right;
+  size: 400px;
+  at: (1000px, 2368px);
+}
+
+// ============================================================================
+// TACTILE VINTAGE PAPER GRAIN OVERLAY (Subtle 35mm Screenprint Texture)
+// ============================================================================
+
+image #paperGrain {
+  src: "./grain.png";
+  size: 1500px 2500px;
+  at: (0px, 0px);
+  opacity: 0.16;
+  blend-mode: overlay;
+}

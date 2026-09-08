@@ -16,16 +16,10 @@
       <stop offset="100%" stop-color="#02050e" />
     </linearGradient>
     <filter id="filter_1" x="-50%" y="-50%" width="200%" height="200%" color-interpolation-filters="sRGB">
-      <feDropShadow dx="0" dy="0" stdDeviation="4" flood-color="#10b981" />
-    </filter>
-    <filter id="filter_2" x="-50%" y="-50%" width="200%" height="200%" color-interpolation-filters="sRGB">
       <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#10b981" flood-opacity="0.25" />
     </filter>
-    <filter id="filter_3" x="-50%" y="-50%" width="200%" height="200%" color-interpolation-filters="sRGB">
-      <feDropShadow dx="0" dy="20" stdDeviation="24" flood-color="#000000" flood-opacity="0.7" />
-    </filter>
-    <filter id="filter_4" x="-50%" y="-50%" width="200%" height="200%" color-interpolation-filters="sRGB">
-      <feDropShadow dx="0" dy="0" stdDeviation="3" flood-color="#10b981" />
+    <filter id="filter_2" x="-50%" y="-50%" width="200%" height="200%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#000000" flood-opacity="0.18" />
     </filter>
   </defs>
   <rect width="100%" height="100%" fill="url(#lin_grad_1)" />
@@ -45,123 +39,123 @@
       <title>Left Column</title>
       <g id="engineStatusBadge" data-name="Engine Status Badge" inkscape:label="Engine Status Badge">
         <title>Engine Status Badge</title>
-        <rect x="55" y="112.5" width="382" height="26" rx="4" ry="4" fill="#10b981" fill-opacity="0.12" stroke="#10b981" stroke-width="1" stroke-opacity="0.45" />
- <circle cx="70" cy="125.5" r="3" fill="#10b981" id="pulseDot" data-name="Pulse Dot" inkscape:label="Pulse Dot" filter="url(#filter_1)" />
-        <text x="81" y="132.5" font-family="Consolas-Bold, 'Consolas', monospace" font-size="11" font-weight="700" font-style="normal" text-anchor="start" letter-spacing="1.2" xml:space="preserve" style="font-family: Consolas-Bold, 'Consolas', monospace; font-weight: 700; font-style: normal; letter-spacing: 1.2px;" fill="#10b981" id="engineStatusText" data-name="TOAD COMPILER ENGINE •... Text" inkscape:label="TOAD COMPILER ENGINE •... Text">TOAD COMPILER ENGINE • v1.0.0 • NATIVE PSD &amp; SVG</text>
+        <rect x="55" y="102" width="388" height="26" rx="4" ry="4" fill="#10b981" fill-opacity="0.12" stroke="#10b981" stroke-width="1" stroke-opacity="0.45" />
+ <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1Z" transform="translate(67 108.5) scale(0.5416666666666666 0.5416666666666666)" fill="none" stroke="#2ee59d" stroke-width="2" id="engineStatusIcon" data-name="Engine Status Icon Icon" inkscape:label="Engine Status Icon Icon" />
+        <text x="87" y="122" font-family="Consolas-Bold, 'Consolas', monospace" font-size="11" font-weight="700" font-style="normal" text-anchor="start" letter-spacing="1.2" xml:space="preserve" style="font-family: Consolas-Bold, 'Consolas', monospace; font-weight: 700; font-style: normal; letter-spacing: 1.2px;" fill="#2ee59d" id="engineStatusText" data-name="TOAD COMPILER ENGINE •... Text" inkscape:label="TOAD COMPILER ENGINE •... Text">TOAD COMPILER ENGINE • v1.0.0 • NATIVE PSD &amp; SVG</text>
       </g>
       <g id="brandRow" data-name="Brand Row" inkscape:label="Brand Row">
         <title>Brand Row</title>
         <g id="emblemFrame" data-name="Emblem Frame" inkscape:label="Emblem Frame">
           <title>Emblem Frame</title>
- <rect x="55" y="154.5" width="86" height="86" rx="25" ry="25" fill="#10b981" id="tileChassis" data-name="Tile Chassis" inkscape:label="Tile Chassis" filter="url(#filter_2)" />
+ <rect x="55" y="144" width="86" height="86" rx="12" ry="12" fill="#10b981" id="tileChassis" data-name="Tile Chassis" inkscape:label="Tile Chassis" filter="url(#filter_1)" />
           <g id="silhBrand" data-name="Silh Brand" inkscape:label="Silh Brand">
             <title>Silh Brand</title>
- <circle cx="83.5" cy="187" r="10.5" fill="#ffffff" data-name="Circle" inkscape:label="Circle" />
- <circle cx="112.5" cy="187" r="10.5" fill="#ffffff" data-name="Circle" inkscape:label="Circle" />
- <rect x="68" y="188.5" width="60" height="30" rx="15" ry="15" fill="#ffffff" data-name="Rounded Rectangle" inkscape:label="Rounded Rectangle" />
- <path d="M 26 21 L 34 27 L 26 33" transform="translate(68 176.5)" fill="none" stroke="#10b981" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" data-name="Vector Path" inkscape:label="Vector Path" />
+ <circle cx="83.5" cy="176.5" r="10.5" fill="#ffffff" data-name="Circle" inkscape:label="Circle" />
+ <circle cx="112.5" cy="176.5" r="10.5" fill="#ffffff" data-name="Circle" inkscape:label="Circle" />
+ <rect x="68" y="178" width="60" height="30" rx="15" ry="15" fill="#ffffff" data-name="Rounded Rectangle" inkscape:label="Rounded Rectangle" />
+ <path d="M 25 18 L 36 27 L 25 36 L 29 36 L 40 27 L 29 18 Z" transform="translate(68 166)" fill="#10b981" data-name="Vector Path" inkscape:label="Vector Path" />
           </g>
         </g>
         <g id="wordmarkBlock" data-name="Wordmark Block" inkscape:label="Wordmark Block">
           <title>Wordmark Block</title>
           <g id="titleRow" data-name="Title Row" inkscape:label="Title Row">
             <title>Title Row</title>
-            <text x="161" y="204" font-family="SegoeUI-Bold, 'Segoe UI', sans-serif" font-size="52" font-weight="700" font-style="normal" text-anchor="start" letter-spacing="-1.5" xml:space="preserve" style="font-family: SegoeUI-Bold, 'Segoe UI', sans-serif; font-weight: 700; font-style: normal; letter-spacing: -1.5px;" fill="#ffffff" id="logoToad" data-name="toad Text" inkscape:label="toad Text">toad</text>
-            <text x="271" y="206" font-family="SegoeUI-Bold, 'Segoe UI', sans-serif" font-size="28" font-weight="700" font-style="normal" text-anchor="start" xml:space="preserve" style="font-family: SegoeUI-Bold, 'Segoe UI', sans-serif; font-weight: 700; font-style: normal;" fill="#00f0ff" id="logoDsl" data-name=".dsl Text" inkscape:label=".dsl Text">.dsl</text>
+            <text x="161" y="193" font-family="SegoeUI-Bold, 'Segoe UI', sans-serif" font-size="52" font-weight="700" font-style="normal" text-anchor="start" letter-spacing="-1.5" xml:space="preserve" style="font-family: SegoeUI-Bold, 'Segoe UI', sans-serif; font-weight: 700; font-style: normal; letter-spacing: -1.5px;" fill="#ffffff" id="logoToad" data-name="toad Text" inkscape:label="toad Text">toad</text>
+            <text x="271" y="195" font-family="SegoeUI-Bold, 'Segoe UI', sans-serif" font-size="28" font-weight="700" font-style="normal" text-anchor="start" xml:space="preserve" style="font-family: SegoeUI-Bold, 'Segoe UI', sans-serif; font-weight: 700; font-style: normal;" fill="#00f0ff" id="logoDsl" data-name=".dsl Text" inkscape:label=".dsl Text">.dsl</text>
           </g>
-          <text x="161" y="228" font-family="Consolas-Bold, 'Consolas', monospace" font-size="10.5" font-weight="700" font-style="normal" text-anchor="start" letter-spacing="2.2" xml:space="preserve" style="font-family: Consolas-Bold, 'Consolas', monospace; font-weight: 700; font-style: normal; letter-spacing: 2.2px;" fill="#10b981" id="taglineText" data-name="SPATIAL DESIGN LANGUAGE &amp;... Text" inkscape:label="SPATIAL DESIGN LANGUAGE &amp;... Text">SPATIAL DESIGN LANGUAGE &amp; GRAPHICS COMPILER</text>
+          <text x="161" y="218" font-family="Consolas-Bold, 'Consolas', monospace" font-size="10.5" font-weight="700" font-style="normal" text-anchor="start" letter-spacing="2.2" xml:space="preserve" style="font-family: Consolas-Bold, 'Consolas', monospace; font-weight: 700; font-style: normal; letter-spacing: 2.2px;" fill="#2ee59d" id="taglineText" data-name="SPATIAL DESIGN LANGUAGE &amp;... Text" inkscape:label="SPATIAL DESIGN LANGUAGE &amp;... Text">SPATIAL DESIGN LANGUAGE &amp; GRAPHICS COMPILER</text>
         </g>
       </g>
-      <text x="55" y="275.5" font-family="SegoeUI-Bold, 'Segoe UI', sans-serif" font-size="23.5" font-weight="700" font-style="normal" text-anchor="start" letter-spacing="-0.5" xml:space="preserve" style="font-family: SegoeUI-Bold, 'Segoe UI', sans-serif; font-weight: 700; font-style: normal; letter-spacing: -0.5px;" fill="#f1f5f9" id="heroHeadline" data-name="Declarative layout. Native... Text" inkscape:label="Declarative layout. Native... Text">Declarative layout. Native Photoshop PSD compilation.</text>
-      <text x="55" y="312.5" font-family="SegoeUI, 'Segoe UI', sans-serif" font-size="13.5" font-weight="400" font-style="normal" text-anchor="start" xml:space="preserve" style="font-family: SegoeUI, 'Segoe UI', sans-serif; font-weight: 400; font-style: normal;" fill="#94a3b8" id="heroCopy" data-name="Compile declarative AST... Text" inkscape:label="Compile declarative AST... Text"><tspan x="55" y="312.5">Compile declarative AST directly into pixel-perfect SVGs, Skia-rendered 2D raster buffers, and layered Photoshop PSDs</tspan><tspan x="55" y="332.5">with native text layers (TySh), 4-pass constraint math, and multi-scale Retina support.</tspan></text>
+      <text x="55" y="265" font-family="SegoeUI-Bold, 'Segoe UI', sans-serif" font-size="24" font-weight="700" font-style="normal" text-anchor="start" letter-spacing="-0.5" xml:space="preserve" style="font-family: SegoeUI-Bold, 'Segoe UI', sans-serif; font-weight: 700; font-style: normal; letter-spacing: -0.5px;" fill="#f1f5f9" id="heroHeadline" data-name="Declarative layout. Native... Text" inkscape:label="Declarative layout. Native... Text">Declarative layout. Native Photoshop PSD compilation.</text>
+      <text x="55" y="303" font-family="SegoeUI, 'Segoe UI', sans-serif" font-size="13.5" font-weight="400" font-style="normal" text-anchor="start" xml:space="preserve" style="font-family: SegoeUI, 'Segoe UI', sans-serif; font-weight: 400; font-style: normal;" fill="#cbd5e1" id="heroCopy" data-name="Compile declarative AST... Text" inkscape:label="Compile declarative AST... Text"><tspan x="55" y="303">Compile declarative AST directly into pixel-perfect SVGs, Skia-rendered 2D raster</tspan><tspan x="55" y="323">buffers, and layered Photoshop PSDs with native text layers (TySh), 4-pass</tspan><tspan x="55" y="343">constraint math, and multi-scale Retina support.</tspan></text>
       <g id="specChipsRow" data-name="Spec Chips Row" inkscape:label="Spec Chips Row">
         <title>Spec Chips Row</title>
         <g id="chip1" data-name="Chip 1" inkscape:label="Chip 1">
           <title>Chip 1</title>
-          <rect x="55" y="357.5" width="136" height="30" rx="4" ry="4" fill="#ffffff" fill-opacity="0.03" stroke="#ffffff" stroke-width="1" stroke-opacity="0.09" />
- <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1Z" transform="translate(67 366) scale(0.5416666666666666 0.5416666666666666)" fill="none" stroke="#f1f5f9" stroke-width="1.8" data-name="Icon" inkscape:label="Icon" />
-          <text x="88" y="379.5" font-family="Consolas-Bold, 'Consolas', monospace" font-size="12" font-weight="700" font-style="normal" text-anchor="start" xml:space="preserve" style="font-family: Consolas-Bold, 'Consolas', monospace; font-weight: 700; font-style: normal;" fill="#f1f5f9" data-name="4-Pass Math Text" inkscape:label="4-Pass Math Text">4-Pass Math</text>
+          <rect x="55" y="368" width="136" height="30" rx="4" ry="4" fill="#ffffff" fill-opacity="0.03" stroke="#ffffff" stroke-width="1" stroke-opacity="0.09" />
+ <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1Z" transform="translate(67 376.5) scale(0.5416666666666666 0.5416666666666666)" fill="none" stroke="#f1f5f9" stroke-width="2" data-name="Icon" inkscape:label="Icon" />
+          <text x="88" y="390" font-family="Consolas-Bold, 'Consolas', monospace" font-size="12" font-weight="700" font-style="normal" text-anchor="start" xml:space="preserve" style="font-family: Consolas-Bold, 'Consolas', monospace; font-weight: 700; font-style: normal;" fill="#f1f5f9" data-name="4-Pass Math Text" inkscape:label="4-Pass Math Text">4-Pass Math</text>
         </g>
         <g id="chip2" data-name="Chip 2" inkscape:label="Chip 2">
           <title>Chip 2</title>
-          <rect x="201" y="357.5" width="154" height="30" rx="4" ry="4" fill="#10b981" fill-opacity="0.08" stroke="#10b981" stroke-width="1" stroke-opacity="0.35" />
- <path d="M20 6 9 17l-5-5" transform="translate(213 366) scale(0.5416666666666666 0.5416666666666666)" fill="none" stroke="#10b981" stroke-width="2" data-name="Icon" inkscape:label="Icon" />
-          <text x="234" y="379.5" font-family="Consolas-Bold, 'Consolas', monospace" font-size="12" font-weight="700" font-style="normal" text-anchor="start" xml:space="preserve" style="font-family: Consolas-Bold, 'Consolas', monospace; font-weight: 700; font-style: normal;" fill="#10b981" data-name="Skia 2D Native Text" inkscape:label="Skia 2D Native Text">Skia 2D Native</text>
+          <rect x="201" y="368" width="154" height="30" rx="4" ry="4" fill="#10b981" fill-opacity="0.08" stroke="#10b981" stroke-width="1" stroke-opacity="0.35" />
+ <path d="M20 6 9 17l-5-5" transform="translate(213 376.5) scale(0.5416666666666666 0.5416666666666666)" fill="none" stroke="#2ee59d" stroke-width="2" data-name="Icon" inkscape:label="Icon" />
+          <text x="234" y="390" font-family="Consolas-Bold, 'Consolas', monospace" font-size="12" font-weight="700" font-style="normal" text-anchor="start" xml:space="preserve" style="font-family: Consolas-Bold, 'Consolas', monospace; font-weight: 700; font-style: normal;" fill="#2ee59d" data-name="Skia 2D Native Text" inkscape:label="Skia 2D Native Text">Skia 2D Native</text>
         </g>
         <g id="chip3" data-name="Chip 3" inkscape:label="Chip 3">
           <title>Chip 3</title>
-          <rect x="365" y="357.5" width="188" height="30" rx="4" ry="4" fill="#ffffff" fill-opacity="0.03" stroke="#ffffff" stroke-width="1" stroke-opacity="0.09" />
- <path d="M5 12h14M12 5l7 7-7 7" transform="translate(377 366) scale(0.5416666666666666 0.5416666666666666)" fill="none" stroke="#f1f5f9" stroke-width="1.8" data-name="Icon" inkscape:label="Icon" />
-          <text x="398" y="379.5" font-family="Consolas-Bold, 'Consolas', monospace" font-size="12" font-weight="700" font-style="normal" text-anchor="start" xml:space="preserve" style="font-family: Consolas-Bold, 'Consolas', monospace; font-weight: 700; font-style: normal;" fill="#f1f5f9" data-name="Layered PSDs (TySh) Text" inkscape:label="Layered PSDs (TySh) Text">Layered PSDs (TySh)</text>
+          <rect x="365" y="368" width="188" height="30" rx="4" ry="4" fill="#ffffff" fill-opacity="0.03" stroke="#ffffff" stroke-width="1" stroke-opacity="0.09" />
+ <path d="M5 12h14M12 5l7 7-7 7" transform="translate(377 376.5) scale(0.5416666666666666 0.5416666666666666)" fill="none" stroke="#f1f5f9" stroke-width="2" data-name="Icon" inkscape:label="Icon" />
+          <text x="398" y="390" font-family="Consolas-Bold, 'Consolas', monospace" font-size="12" font-weight="700" font-style="normal" text-anchor="start" xml:space="preserve" style="font-family: Consolas-Bold, 'Consolas', monospace; font-weight: 700; font-style: normal;" fill="#f1f5f9" data-name="Layered PSDs (TySh) Text" inkscape:label="Layered PSDs (TySh) Text">Layered PSDs (TySh)</text>
         </g>
         <g id="chip4" data-name="Chip 4" inkscape:label="Chip 4">
           <title>Chip 4</title>
-          <rect x="563" y="357.5" width="172" height="30" rx="4" ry="4" fill="#ffffff" fill-opacity="0.03" stroke="#ffffff" stroke-width="1" stroke-opacity="0.09" />
- <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1Z" transform="translate(575 366) scale(0.5416666666666666 0.5416666666666666)" fill="none" stroke="#f1f5f9" stroke-width="1.8" data-name="Icon" inkscape:label="Icon" />
-          <text x="596" y="379.5" font-family="Consolas-Bold, 'Consolas', monospace" font-size="12" font-weight="700" font-style="normal" text-anchor="start" xml:space="preserve" style="font-family: Consolas-Bold, 'Consolas', monospace; font-weight: 700; font-style: normal;" fill="#f1f5f9" data-name="Retina @1x / @2x Text" inkscape:label="Retina @1x / @2x Text">Retina @1x / @2x</text>
+          <rect x="563" y="368" width="172" height="30" rx="4" ry="4" fill="#ffffff" fill-opacity="0.03" stroke="#ffffff" stroke-width="1" stroke-opacity="0.09" />
+ <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1Z" transform="translate(575 376.5) scale(0.5416666666666666 0.5416666666666666)" fill="none" stroke="#f1f5f9" stroke-width="2" data-name="Icon" inkscape:label="Icon" />
+          <text x="596" y="390" font-family="Consolas-Bold, 'Consolas', monospace" font-size="12" font-weight="700" font-style="normal" text-anchor="start" xml:space="preserve" style="font-family: Consolas-Bold, 'Consolas', monospace; font-weight: 700; font-style: normal;" fill="#f1f5f9" data-name="Retina @1x / @2x Text" inkscape:label="Retina @1x / @2x Text">Retina @1x / @2x</text>
         </g>
       </g>
     </g>
-    <g id="compilerConsole" data-name="Compiler Console" inkscape:label="Compiler Console" filter="url(#filter_3)">
+    <g id="compilerConsole" data-name="Compiler Console" inkscape:label="Compiler Console" filter="url(#filter_2)">
       <title>Compiler Console</title>
-      <rect x="833" y="123.5" width="612" height="253" rx="6" ry="6" fill="#050c1e" fill-opacity="0.94" stroke="#00f0ff" stroke-width="1" stroke-opacity="0.28" />
+      <rect x="833" y="117" width="612" height="266" rx="6" ry="6" fill="#050c1e" fill-opacity="0.94" stroke="#00f0ff" stroke-width="1" stroke-opacity="0.28" />
       <g id="consoleHeader" data-name="Console Header" inkscape:label="Console Header">
         <title>Console Header</title>
-        <rect x="833" y="123.5" width="612" height="38" fill="#ffffff" fill-opacity="0.03" stroke="#ffffff" stroke-width="1" stroke-opacity="0.07" />
- <rect x="849" y="130.5" width="96" height="24" rx="3" ry="3" fill="#00f0ff" fill-opacity="0.12" stroke="#00f0ff" stroke-width="1" stroke-opacity="0.35" id="tabActiveBg" data-name="Tab Active Bg" inkscape:label="Tab Active Bg" />
-        <text x="858" y="149.5" font-family="Consolas-Bold, 'Consolas', monospace" font-size="11" font-weight="700" font-style="normal" text-anchor="start" xml:space="preserve" style="font-family: Consolas-Bold, 'Consolas', monospace; font-weight: 700; font-style: normal;" fill="#00f0ff" id="tabActiveText" data-name="banner.toad Text" inkscape:label="banner.toad Text">banner.toad</text>
-        <text x="957" y="149.5" font-family="Consolas, monospace" font-size="11" font-weight="400" font-style="normal" text-anchor="start" xml:space="preserve" style="font-weight: 400; font-style: normal;" fill="#64748b" id="tabSecondaryText" data-name="tokens.toad Text" inkscape:label="tokens.toad Text">tokens.toad</text>
+        <rect x="833" y="117" width="612" height="38" fill="#ffffff" fill-opacity="0.03" stroke="#ffffff" stroke-width="1" stroke-opacity="0.07" />
+ <rect x="849" y="124" width="96" height="24" rx="3" ry="3" fill="#00f0ff" fill-opacity="0.12" stroke="#00f0ff" stroke-width="1" stroke-opacity="0.35" id="tabActiveBg" data-name="Tab Active Bg" inkscape:label="Tab Active Bg" />
+        <text x="858" y="143" font-family="Consolas-Bold, 'Consolas', monospace" font-size="11" font-weight="700" font-style="normal" text-anchor="start" xml:space="preserve" style="font-family: Consolas-Bold, 'Consolas', monospace; font-weight: 700; font-style: normal;" fill="#00f0ff" id="tabActiveText" data-name="banner.toad Text" inkscape:label="banner.toad Text">banner.toad</text>
+        <text x="957" y="143" font-family="Consolas, monospace" font-size="11" font-weight="400" font-style="normal" text-anchor="start" xml:space="preserve" style="font-weight: 400; font-style: normal;" fill="#cbd5e1" id="tabSecondaryText" data-name="tokens.toad Text" inkscape:label="tokens.toad Text">tokens.toad</text>
         <g id="buildPill" data-name="Build Pill" inkscape:label="Build Pill">
           <title>Build Pill</title>
-          <rect x="1269" y="130.5" width="160" height="24" rx="3" ry="3" fill="#10b981" fill-opacity="0.12" stroke="#10b981" stroke-width="1" stroke-opacity="0.4" />
- <circle cx="1284" cy="142.5" r="3" fill="#10b981" id="buildDot" data-name="Build Dot" inkscape:label="Build Dot" filter="url(#filter_4)" />
-          <text x="1295" y="149" font-family="Consolas-Bold, 'Consolas', monospace" font-size="10" font-weight="700" font-style="normal" text-anchor="start" letter-spacing="0.8" xml:space="preserve" style="font-family: Consolas-Bold, 'Consolas', monospace; font-weight: 700; font-style: normal; letter-spacing: 0.8px;" fill="#10b981" id="buildPillText" data-name="COMPILED • 0 ERRORS Text" inkscape:label="COMPILED • 0 ERRORS Text">COMPILED • 0 ERRORS</text>
+          <rect x="1269" y="124" width="160" height="24" rx="3" ry="3" fill="#10b981" fill-opacity="0.12" stroke="#10b981" stroke-width="1" stroke-opacity="0.4" />
+ <path d="M20 6 9 17l-5-5" transform="translate(1279 130.5) scale(0.4583333333333333 0.4583333333333333)" fill="none" stroke="#2ee59d" stroke-width="2" id="buildIcon" data-name="Build Icon Icon" inkscape:label="Build Icon Icon" />
+          <text x="1295" y="142" font-family="Consolas-Bold, 'Consolas', monospace" font-size="10" font-weight="700" font-style="normal" text-anchor="start" letter-spacing="0.8" xml:space="preserve" style="font-family: Consolas-Bold, 'Consolas', monospace; font-weight: 700; font-style: normal; letter-spacing: 0.8px;" fill="#2ee59d" id="buildPillText" data-name="COMPILED • 0 ERRORS Text" inkscape:label="COMPILED • 0 ERRORS Text">COMPILED • 0 ERRORS</text>
         </g>
       </g>
       <g id="consoleBody" data-name="Console Body" inkscape:label="Console Body">
         <title>Console Body</title>
         <g id="codeL1" data-name="Code L 1" inkscape:label="Code L 1">
           <title>Code L 1</title>
-          <text x="853" y="187.5" font-family="Consolas, monospace" font-size="12" font-weight="400" font-style="normal" text-anchor="start" xml:space="preserve" style="font-weight: 400; font-style: normal;" fill="#94a3b8" fill-opacity="0.35" data-name="01 Text" inkscape:label="01 Text">01</text>
-          <text x="881" y="187.5" font-family="Consolas, monospace" font-size="12" font-weight="400" font-style="normal" text-anchor="start" xml:space="preserve" style="font-weight: 400; font-style: normal;" fill="#00f0ff" data-name="@font &quot;./fonts/segoeui.ttf&quot;... Text" inkscape:label="@font &quot;./fonts/segoeui.ttf&quot;... Text">@font "./fonts/segoeui.ttf" as "Segoe UI";</text>
+          <text x="853" y="181" font-family="Consolas, monospace" font-size="12" font-weight="400" font-style="normal" text-anchor="start" xml:space="preserve" style="font-weight: 400; font-style: normal;" fill="#7dd3fc" data-name="01 Text" inkscape:label="01 Text">01</text>
+          <text x="881" y="181" font-family="Consolas, monospace" font-size="12" font-weight="400" font-style="normal" text-anchor="start" xml:space="preserve" style="font-weight: 400; font-style: normal;" fill="#00f0ff" data-name="@font &quot;./fonts/segoeui.ttf&quot;... Text" inkscape:label="@font &quot;./fonts/segoeui.ttf&quot;... Text">@font "./fonts/segoeui.ttf" as "Segoe UI";</text>
         </g>
         <g id="codeL2" data-name="Code L 2" inkscape:label="Code L 2">
           <title>Code L 2</title>
-          <text x="853" y="209.5" font-family="Consolas, monospace" font-size="12" font-weight="400" font-style="normal" text-anchor="start" xml:space="preserve" style="font-weight: 400; font-style: normal;" fill="#94a3b8" fill-opacity="0.35" data-name="02 Text" inkscape:label="02 Text">02</text>
-          <text x="881" y="209.5" font-family="Consolas, monospace" font-size="12" font-weight="400" font-style="normal" text-anchor="start" xml:space="preserve" style="font-weight: 400; font-style: normal;" fill="#ccff00" data-name="Brand = #10 B 981; &gt;cyan = #00 F 0 Ff; Text" inkscape:label="Brand = #10 B 981; &gt;cyan = #00 F 0 Ff; Text">&gt;brand = #10b981; &gt;cyan = #00f0ff;</text>
+          <text x="853" y="205" font-family="Consolas, monospace" font-size="12" font-weight="400" font-style="normal" text-anchor="start" xml:space="preserve" style="font-weight: 400; font-style: normal;" fill="#7dd3fc" data-name="02 Text" inkscape:label="02 Text">02</text>
+          <text x="881" y="205" font-family="Consolas, monospace" font-size="12" font-weight="400" font-style="normal" text-anchor="start" xml:space="preserve" style="font-weight: 400; font-style: normal;" fill="#ccff00" data-name="Brand = #10 B 981; &gt;cyan = #00 F 0 Ff; Text" inkscape:label="Brand = #10 B 981; &gt;cyan = #00 F 0 Ff; Text">&gt;brand = #10b981; &gt;cyan = #00f0ff;</text>
         </g>
         <g id="codeL3" data-name="Code L 3" inkscape:label="Code L 3">
           <title>Code L 3</title>
-          <text x="853" y="231.5" font-family="Consolas, monospace" font-size="12" font-weight="400" font-style="normal" text-anchor="start" xml:space="preserve" style="font-weight: 400; font-style: normal;" fill="#94a3b8" fill-opacity="0.35" data-name="03 Text" inkscape:label="03 Text">03</text>
-          <text x="881" y="231.5" font-family="Consolas-Bold, 'Consolas', monospace" font-size="12" font-weight="700" font-style="normal" text-anchor="start" xml:space="preserve" style="font-family: Consolas-Bold, 'Consolas', monospace; font-weight: 700; font-style: normal;" fill="#a855f7" data-name="canvas &quot;SocialBanner&quot; { Text" inkscape:label="canvas &quot;SocialBanner&quot; { Text">canvas "SocialBanner" {</text>
+          <text x="853" y="229" font-family="Consolas, monospace" font-size="12" font-weight="400" font-style="normal" text-anchor="start" xml:space="preserve" style="font-weight: 400; font-style: normal;" fill="#7dd3fc" data-name="03 Text" inkscape:label="03 Text">03</text>
+          <text x="881" y="229" font-family="Consolas-Bold, 'Consolas', monospace" font-size="12" font-weight="700" font-style="normal" text-anchor="start" xml:space="preserve" style="font-family: Consolas-Bold, 'Consolas', monospace; font-weight: 700; font-style: normal;" fill="#d8b4fe" data-name="canvas &quot;SocialBanner&quot; { Text" inkscape:label="canvas &quot;SocialBanner&quot; { Text">canvas "SocialBanner" {</text>
         </g>
         <g id="codeL4" data-name="Code L 4" inkscape:label="Code L 4">
           <title>Code L 4</title>
-          <text x="853" y="253.5" font-family="Consolas, monospace" font-size="12" font-weight="400" font-style="normal" text-anchor="start" xml:space="preserve" style="font-weight: 400; font-style: normal;" fill="#94a3b8" fill-opacity="0.35" data-name="04 Text" inkscape:label="04 Text">04</text>
-          <text x="881" y="253.5" font-family="Consolas, monospace" font-size="12" font-weight="400" font-style="normal" text-anchor="start" xml:space="preserve" style="font-weight: 400; font-style: normal;" fill="#f1f5f9" data-name="preset: twitter-header; //... Text" inkscape:label="preset: twitter-header; //... Text"> preset: twitter-header; // 1500x500 3:1</text>
+          <text x="853" y="253" font-family="Consolas, monospace" font-size="12" font-weight="400" font-style="normal" text-anchor="start" xml:space="preserve" style="font-weight: 400; font-style: normal;" fill="#7dd3fc" data-name="04 Text" inkscape:label="04 Text">04</text>
+          <text x="881" y="253" font-family="Consolas, monospace" font-size="12" font-weight="400" font-style="normal" text-anchor="start" xml:space="preserve" style="font-weight: 400; font-style: normal;" fill="#f1f5f9" data-name="preset: twitter-header; //... Text" inkscape:label="preset: twitter-header; //... Text"> preset: twitter-header; // 1500x500 3:1</text>
         </g>
         <g id="codeL5" data-name="Code L 5" inkscape:label="Code L 5">
           <title>Code L 5</title>
-          <text x="853" y="275.5" font-family="Consolas, monospace" font-size="12" font-weight="400" font-style="normal" text-anchor="start" xml:space="preserve" style="font-weight: 400; font-style: normal;" fill="#94a3b8" fill-opacity="0.35" data-name="05 Text" inkscape:label="05 Text">05</text>
-          <text x="881" y="275.5" font-family="Consolas, monospace" font-size="12" font-weight="400" font-style="normal" text-anchor="start" xml:space="preserve" style="font-weight: 400; font-style: normal;" fill="#38bdf8" data-name="export: [png, psd, svg];... Text" inkscape:label="export: [png, psd, svg];... Text"> export: [png, psd, svg]; scales: [1, 2];</text>
+          <text x="853" y="277" font-family="Consolas, monospace" font-size="12" font-weight="400" font-style="normal" text-anchor="start" xml:space="preserve" style="font-weight: 400; font-style: normal;" fill="#7dd3fc" data-name="05 Text" inkscape:label="05 Text">05</text>
+          <text x="881" y="277" font-family="Consolas, monospace" font-size="12" font-weight="400" font-style="normal" text-anchor="start" xml:space="preserve" style="font-weight: 400; font-style: normal;" fill="#7dd3fc" data-name="export: [png, psd, svg];... Text" inkscape:label="export: [png, psd, svg];... Text"> export: [png, psd, svg]; scales: [1, 2];</text>
         </g>
         <g id="codeL6" data-name="Code L 6" inkscape:label="Code L 6">
           <title>Code L 6</title>
-          <text x="853" y="297.5" font-family="Consolas, monospace" font-size="12" font-weight="400" font-style="normal" text-anchor="start" xml:space="preserve" style="font-weight: 400; font-style: normal;" fill="#94a3b8" fill-opacity="0.35" data-name="06 Text" inkscape:label="06 Text">06</text>
-          <text x="881" y="297.5" font-family="Consolas-Bold, 'Consolas', monospace" font-size="12" font-weight="700" font-style="normal" text-anchor="start" xml:space="preserve" style="font-family: Consolas-Bold, 'Consolas', monospace; font-weight: 700; font-style: normal;" fill="#a855f7" data-name="} Text" inkscape:label="} Text">}</text>
+          <text x="853" y="301" font-family="Consolas, monospace" font-size="12" font-weight="400" font-style="normal" text-anchor="start" xml:space="preserve" style="font-weight: 400; font-style: normal;" fill="#7dd3fc" data-name="06 Text" inkscape:label="06 Text">06</text>
+          <text x="881" y="301" font-family="Consolas-Bold, 'Consolas', monospace" font-size="12" font-weight="700" font-style="normal" text-anchor="start" xml:space="preserve" style="font-family: Consolas-Bold, 'Consolas', monospace; font-weight: 700; font-style: normal;" fill="#d8b4fe" data-name="} Text" inkscape:label="} Text">}</text>
         </g>
         <g id="codeL7" data-name="Code L 7" inkscape:label="Code L 7">
           <title>Code L 7</title>
-          <text x="853" y="319.5" font-family="Consolas, monospace" font-size="12" font-weight="400" font-style="normal" text-anchor="start" xml:space="preserve" style="font-weight: 400; font-style: normal;" fill="#94a3b8" fill-opacity="0.35" data-name="07 Text" inkscape:label="07 Text">07</text>
-          <text x="881" y="319.5" font-family="Consolas, monospace" font-size="12" font-weight="400" font-style="normal" text-anchor="start" xml:space="preserve" style="font-weight: 400; font-style: normal;" fill="#94a3b8" data-name="stack #root { direction:... Text" inkscape:label="stack #root { direction:... Text">stack #root { direction: horizontal; gap: 48px; }</text>
+          <text x="853" y="325" font-family="Consolas, monospace" font-size="12" font-weight="400" font-style="normal" text-anchor="start" xml:space="preserve" style="font-weight: 400; font-style: normal;" fill="#7dd3fc" data-name="07 Text" inkscape:label="07 Text">07</text>
+          <text x="881" y="325" font-family="Consolas, monospace" font-size="12" font-weight="400" font-style="normal" text-anchor="start" xml:space="preserve" style="font-weight: 400; font-style: normal;" fill="#cbd5e1" data-name="stack #root { direction:... Text" inkscape:label="stack #root { direction:... Text">stack #root { direction: horizontal; gap: 48px; }</text>
         </g>
       </g>
       <g id="consoleFooter" data-name="Console Footer" inkscape:label="Console Footer">
         <title>Console Footer</title>
-        <rect x="833" y="340.5" width="612" height="36" fill="#ffffff" fill-opacity="0.02" stroke="#ffffff" stroke-width="1" stroke-opacity="0.06" />
- <path d="M20 6 9 17l-5-5" transform="translate(851 351.5) scale(0.5416666666666666 0.5416666666666666)" fill="none" stroke="#10b981" stroke-width="2.2" id="footerCheck" data-name="Footer Check Icon" inkscape:label="Footer Check Icon" />
-        <text x="871" y="364.5" font-family="Consolas-Bold, 'Consolas', monospace" font-size="11" font-weight="700" font-style="normal" text-anchor="start" letter-spacing="0.5" xml:space="preserve" style="font-family: Consolas-Bold, 'Consolas', monospace; font-weight: 700; font-style: normal; letter-spacing: 0.5px;" fill="#10b981" id="footerBuildText" data-name="BUILD: 3.8ms Text" inkscape:label="BUILD: 3.8ms Text">BUILD: 3.8ms</text>
-        <text x="1163" y="364.5" font-family="Consolas, monospace" font-size="11" font-weight="400" font-style="normal" text-anchor="start" xml:space="preserve" style="font-weight: 400; font-style: normal;" fill="#94a3b8" id="footerStatsRight" data-name="18 PSD Layers (TySh) • Skia... Text" inkscape:label="18 PSD Layers (TySh) • Skia... Text">18 PSD Layers (TySh) • Skia 2D • Retina 2x</text>
+        <rect x="833" y="347" width="612" height="36" fill="#ffffff" fill-opacity="0.02" stroke="#ffffff" stroke-width="1" stroke-opacity="0.06" />
+ <path d="M20 6 9 17l-5-5" transform="translate(851 358) scale(0.5416666666666666 0.5416666666666666)" fill="none" stroke="#2ee59d" stroke-width="2" id="footerCheck" data-name="Footer Check Icon" inkscape:label="Footer Check Icon" />
+        <text x="871" y="371" font-family="Consolas-Bold, 'Consolas', monospace" font-size="11" font-weight="700" font-style="normal" text-anchor="start" letter-spacing="0.5" xml:space="preserve" style="font-family: Consolas-Bold, 'Consolas', monospace; font-weight: 700; font-style: normal; letter-spacing: 0.5px;" fill="#2ee59d" id="footerBuildText" data-name="BUILD: 3.8ms Text" inkscape:label="BUILD: 3.8ms Text">BUILD: 3.8ms</text>
+        <text x="1163" y="371" font-family="Consolas, monospace" font-size="11" font-weight="400" font-style="normal" text-anchor="start" xml:space="preserve" style="font-weight: 400; font-style: normal;" fill="#cbd5e1" id="footerStatsRight" data-name="18 PSD Layers (TySh) • Skia... Text" inkscape:label="18 PSD Layers (TySh) • Skia... Text">18 PSD Layers (TySh) • Skia 2D • Retina 2x</text>
       </g>
     </g>
   </g>

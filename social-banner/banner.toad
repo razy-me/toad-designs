@@ -33,16 +33,17 @@
 >crosshairColor = alpha(#00f0ff, 0.35);
 
 >accentEmerald  = #10b981;
+>emeraldText    = #2ee59d;
 >toxicLime      = #ccff00;
 >cyanLaser      = #00f0ff;
->accentBlue     = #38bdf8;
->accentPurple   = #a855f7;
->accentAmber    = #f59e0b;
+>syntaxBlue     = #7dd3fc;
+>syntaxPurple   = #d8b4fe;
+>syntaxLineNum  = #7dd3fc;
 
 >textWhite      = #ffffff;
 >textLight      = #f1f5f9;
->textMuted      = #94a3b8;
->textDim        = #64748b;
+>textMuted      = #cbd5e1;
+>textDim        = #cbd5e1;
 
 // --- Canvas Definition: Official 1500 x 500 px (3:1 Widescreen) ---
 canvas "ToadSocialBanner" {
@@ -127,18 +128,18 @@ stack #bannerRoot {
         gap: 16px;
         size: 730px hug;
 
-        // Telemetry Status Badge (Precision-anchored: dot center = 13px, text center = 13px, badge = 26px)
+        // Telemetry Status Badge (Precision-anchored: icon center = 13px, text center = 13px, badge = 26px)
         group #engineStatusBadge {
-            size: 382px 26px;
+            size: 388px 26px;
             radius: 4px;
             fill: alpha(>accentEmerald, 0.12);
             stroke: alpha(>accentEmerald, 0.45) 1px;
 
-            circle #pulseDot {
-                size: 6px;
-                fill: >accentEmerald;
-                shadow: 0px 0px 8px >accentEmerald;
-                at: (12px, 10px);
+            icon #engineStatusIcon {
+                iconName: "settings";
+                size: 13px;
+                stroke: >emeraldText 2px;
+                at: (12px, 6.5px);
             }
 
             text #engineStatusText {
@@ -146,9 +147,9 @@ stack #bannerRoot {
                 font-family: >fontMono;
                 font-size: 11px;
                 font-weight: 700;
-                color: >accentEmerald;
+                color: >emeraldText;
                 letter-spacing: 1.2px;
-                at: (26px, 11px);
+                at: (32px, 11px);
             }
         }
 
@@ -163,10 +164,10 @@ stack #bannerRoot {
             group #emblemFrame {
                 size: 86px 86px;
 
-                // Base Emerald Squircle Chassis
+                // Base Emerald Squircle Chassis (Disciplined 12px Kruppstahl corner radius)
                 rect #tileChassis {
                     size: 86px 86px;
-                    radius: 25px;
+                    radius: 12px;
                     fill: >accentEmerald;
                     shadow: 0px 8px 24px alpha(>accentEmerald, 0.25);
                     at: (0px, 0px);
@@ -186,21 +187,18 @@ stack #bannerRoot {
 
                     // Negative Space Syntax Chevron (">")
                     path {
-                        d: "M 26 21 L 34 27 L 26 33";
+                        d: "M 25 18 L 36 27 L 25 36 L 29 36 L 40 27 L 29 18 Z";
                         size: 60px 42px;
-                        stroke: >accentEmerald 5.5px;
-                        stroke-cap: round;
-                        stroke-join: round;
-                        fill: transparent;
+                        fill: >accentEmerald;
                         at: (0px, 0px);
                     }
                 }
             }
 
-            // Wordmark & Subtitle Block
+            // Wordmark & Subtitle Block (72px height for integer vertical centering)
             stack #wordmarkBlock {
                 direction: vertical;
-                gap: 2px;
+                gap: 3px;
 
                 // Typographically anchored title row with exact baseline match
                 group #titleRow {
@@ -229,30 +227,31 @@ stack #bannerRoot {
                     font-family: >fontMono;
                     font-size: 10.5px;
                     font-weight: 700;
-                    color: >accentEmerald;
+                    color: >emeraldText;
                     letter-spacing: 2.2px;
                 }
             }
         }
 
-        // High-Contrast Punchy Headline
+        // High-Contrast Punchy Headline (Disciplined integer metric)
         text #heroHeadline {
             content: "Declarative layout. Native Photoshop PSD compilation.";
-            font-size: 23.5px;
+            font-size: 24px;
+            line-height: 30px;
             font-weight: 700;
             color: >textLight;
             letter-spacing: -0.5px;
             size: 730px auto;
         }
 
-        // Domain-Specific Engineering Copy
+        // Domain-Specific Engineering Copy (Disciplined 45-75 char reading measure)
         text #heroCopy {
             content: "Compile declarative AST directly into pixel-perfect SVGs, Skia-rendered 2D raster buffers, and layered Photoshop PSDs with native text layers (TySh), 4-pass constraint math, and multi-scale Retina support.";
             font-size: 13.5px;
             font-weight: 400;
             color: >textMuted;
             line-height: 20px;
-            size: 710px auto;
+            size: 500px auto;
         }
 
         // Kruppstahl-Style Structured Spec Chips (Precision-aligned: icon center = 15px, text center = 15px)
@@ -270,7 +269,7 @@ stack #bannerRoot {
                 icon {
                     iconName: "settings";
                     size: 13px;
-                    stroke: >textLight 1.8px;
+                    stroke: >textLight 2px;
                     at: (12px, 8.5px);
                 }
 
@@ -293,7 +292,7 @@ stack #bannerRoot {
                 icon {
                     iconName: "check";
                     size: 13px;
-                    stroke: >accentEmerald 2px;
+                    stroke: >emeraldText 2px;
                     at: (12px, 8.5px);
                 }
 
@@ -302,7 +301,7 @@ stack #bannerRoot {
                     font-family: >fontMono;
                     font-size: 12px;
                     font-weight: 700;
-                    color: >accentEmerald;
+                    color: >emeraldText;
                     at: (33px, 12px);
                 }
             }
@@ -316,7 +315,7 @@ stack #bannerRoot {
                 icon {
                     iconName: "arrow-right";
                     size: 13px;
-                    stroke: >textLight 1.8px;
+                    stroke: >textLight 2px;
                     at: (12px, 8.5px);
                 }
 
@@ -339,7 +338,7 @@ stack #bannerRoot {
                 icon {
                     iconName: "settings";
                     size: 13px;
-                    stroke: >textLight 1.8px;
+                    stroke: >textLight 2px;
                     at: (12px, 8.5px);
                 }
 
@@ -364,7 +363,7 @@ stack #bannerRoot {
         radius: 6px;
         fill: >bgConsole;
         stroke: >borderTactical 1px;
-        shadow: 0px 20px 48px alpha(#000000, 0.7);
+        shadow: 0px 16px 36px alpha(#000000, 0.18);
 
         // Window Chrome & Telemetry Strip (Pixel-perfect group alignment)
         group #consoleHeader {
@@ -408,11 +407,11 @@ stack #bannerRoot {
                 stroke: alpha(>accentEmerald, 0.4) 1px;
                 at: (436px, 7px);
 
-                circle #buildDot {
-                    size: 6px;
-                    fill: >accentEmerald;
-                    shadow: 0px 0px 6px >accentEmerald;
-                    at: (12px, 9px);
+                icon #buildIcon {
+                    iconName: "check";
+                    size: 11px;
+                    stroke: >emeraldText 2px;
+                    at: (10px, 6.5px);
                 }
 
                 text #buildPillText {
@@ -420,9 +419,9 @@ stack #bannerRoot {
                     font-family: >fontMono;
                     font-size: 10px;
                     font-weight: 700;
-                    color: >accentEmerald;
+                    color: >emeraldText;
                     letter-spacing: 0.8px;
-                    at: (26px, 10.5px);
+                    at: (26px, 10px);
                 }
             }
         }
@@ -431,63 +430,63 @@ stack #bannerRoot {
         stack #consoleBody {
             direction: vertical;
             padding: [16px, 20px, 16px, 20px];
-            gap: 7px;
+            gap: 8px;
             size: 100% hug;
 
             // Line 1: @font directive
             stack #codeL1 {
                 direction: horizontal;
                 gap: 14px;
-                text { content: "01"; font-family: >fontMono; font-size: 12px; font-weight: 400; color: alpha(>textMuted, 0.35); }
-                text { content: "@font \"./fonts/segoeui.ttf\" as \"Segoe UI\";"; font-family: >fontMono; font-size: 12px; font-weight: 400; color: >cyanLaser; }
+                text { content: "01"; font-family: >fontMono; font-size: 12px; line-height: 16px; font-weight: 400; color: >syntaxLineNum; }
+                text { content: "@font \"./fonts/segoeui.ttf\" as \"Segoe UI\";"; font-family: >fontMono; font-size: 12px; line-height: 16px; font-weight: 400; color: >cyanLaser; }
             }
 
             // Line 2: Variable declaration
             stack #codeL2 {
                 direction: horizontal;
                 gap: 14px;
-                text { content: "02"; font-family: >fontMono; font-size: 12px; font-weight: 400; color: alpha(>textMuted, 0.35); }
-                text { content: ">brand = #10b981;  >cyan = #00f0ff;"; font-family: >fontMono; font-size: 12px; font-weight: 400; color: >toxicLime; }
+                text { content: "02"; font-family: >fontMono; font-size: 12px; line-height: 16px; font-weight: 400; color: >syntaxLineNum; }
+                text { content: ">brand = #10b981;  >cyan = #00f0ff;"; font-family: >fontMono; font-size: 12px; line-height: 16px; font-weight: 400; color: >toxicLime; }
             }
 
             // Line 3: Canvas block header
             stack #codeL3 {
                 direction: horizontal;
                 gap: 14px;
-                text { content: "03"; font-family: >fontMono; font-size: 12px; font-weight: 400; color: alpha(>textMuted, 0.35); }
-                text { content: "canvas \"SocialBanner\" {"; font-family: >fontMono; font-size: 12px; font-weight: 700; color: >accentPurple; }
+                text { content: "03"; font-family: >fontMono; font-size: 12px; line-height: 16px; font-weight: 400; color: >syntaxLineNum; }
+                text { content: "canvas \"SocialBanner\" {"; font-family: >fontMono; font-size: 12px; line-height: 16px; font-weight: 700; color: >syntaxPurple; }
             }
 
             // Line 4: Preset
             stack #codeL4 {
                 direction: horizontal;
                 gap: 14px;
-                text { content: "04"; font-family: >fontMono; font-size: 12px; font-weight: 400; color: alpha(>textMuted, 0.35); }
-                text { content: "    preset: twitter-header;  // 1500x500 3:1"; font-family: >fontMono; font-size: 12px; font-weight: 400; color: >textLight; }
+                text { content: "04"; font-family: >fontMono; font-size: 12px; line-height: 16px; font-weight: 400; color: >syntaxLineNum; }
+                text { content: "    preset: twitter-header;  // 1500x500 3:1"; font-family: >fontMono; font-size: 12px; line-height: 16px; font-weight: 400; color: >textLight; }
             }
 
             // Line 5: Multi-format export
             stack #codeL5 {
                 direction: horizontal;
                 gap: 14px;
-                text { content: "05"; font-family: >fontMono; font-size: 12px; font-weight: 400; color: alpha(>textMuted, 0.35); }
-                text { content: "    export: [png, psd, svg]; scales: [1, 2];"; font-family: >fontMono; font-size: 12px; font-weight: 400; color: >accentBlue; }
+                text { content: "05"; font-family: >fontMono; font-size: 12px; line-height: 16px; font-weight: 400; color: >syntaxLineNum; }
+                text { content: "    export: [png, psd, svg]; scales: [1, 2];"; font-family: >fontMono; font-size: 12px; line-height: 16px; font-weight: 400; color: >syntaxBlue; }
             }
 
             // Line 6: Canvas closing
             stack #codeL6 {
                 direction: horizontal;
                 gap: 14px;
-                text { content: "06"; font-family: >fontMono; font-size: 12px; font-weight: 400; color: alpha(>textMuted, 0.35); }
-                text { content: "}"; font-family: >fontMono; font-size: 12px; font-weight: 700; color: >accentPurple; }
+                text { content: "06"; font-family: >fontMono; font-size: 12px; line-height: 16px; font-weight: 400; color: >syntaxLineNum; }
+                text { content: "}"; font-family: >fontMono; font-size: 12px; line-height: 16px; font-weight: 700; color: >syntaxPurple; }
             }
 
             // Line 7: Stack component definition
             stack #codeL7 {
                 direction: horizontal;
                 gap: 14px;
-                text { content: "07"; font-family: >fontMono; font-size: 12px; font-weight: 400; color: alpha(>textMuted, 0.35); }
-                text { content: "stack #root { direction: horizontal; gap: 48px; }"; font-family: >fontMono; font-size: 12px; font-weight: 400; color: >textMuted; }
+                text { content: "07"; font-family: >fontMono; font-size: 12px; line-height: 16px; font-weight: 400; color: >syntaxLineNum; }
+                text { content: "stack #root { direction: horizontal; gap: 48px; }"; font-family: >fontMono; font-size: 12px; line-height: 16px; font-weight: 400; color: >textMuted; }
             }
         }
 
@@ -500,7 +499,7 @@ stack #bannerRoot {
             icon #footerCheck {
                 iconName: "check";
                 size: 13px;
-                stroke: >accentEmerald 2.2px;
+                stroke: >emeraldText 2px;
                 at: (18px, 11px);
             }
 
@@ -509,7 +508,7 @@ stack #bannerRoot {
                 font-family: >fontMono;
                 font-size: 11px;
                 font-weight: 700;
-                color: >accentEmerald;
+                color: >emeraldText;
                 letter-spacing: 0.5px;
                 at: (38px, 15px);
             }
