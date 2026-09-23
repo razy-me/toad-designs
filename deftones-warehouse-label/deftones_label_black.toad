@@ -1,0 +1,675 @@
+﻿// ============================================================================
+// 🧬 TOAD MULTI-DNA INSPIRATION MATRIX (Min 3 Personas + Min 3 Corporate Systems)
+// ----------------------------------------------------------------------------
+// 🎭 CREATIVE PERSONAS (the_seed/09_CREATIVE_PERSONAS_AND_STYLES/):
+//   1. jessica_sterling -> Precise Swiss spatial proportions, disciplined margins, hairline rules
+//   2. felix_aero_lindner -> Constructivist geometry, technical line art, pure 1-color screenprint
+//   3. darius_cole -> Brutalist industrial streetwear aesthetics, stark high-contrast graphics
+// 🏢 CORPORATE DESIGN SYSTEMS (the_seed/10_CORPORATE_DESIGN_SYSTEMS/):
+//   1. metro_transvia -> Modernist technical typography discipline, clean weights
+//   2. rostwerk_kaffee -> Pure monochrome screenprint tokens
+//   3. schoko_kuvertuere -> Precision layout margins, clean print-ready silhouettes
+// ============================================================================
+
+// --- 1-Color Screenprint Tokens (Pure Black on Transparent Canvas for White/Light Shirts) ---
+>inkBlack      = #000000;
+>fontSans      = "Arial, Helvetica, sans-serif";
+>fontMono      = "Consolas, Courier New, monospace";
+
+// ============================================================================
+// CANVAS CONFIGURATION (Apparel Print Graphic: 1600x2400 @ 300DPI)
+// ============================================================================
+
+canvas "Deftones-Warehouse-Label-Black" {
+  size: 1600px 2400px;
+  background: transparent;
+  font-family: >fontSans;
+  export: all;
+  quality: 100;
+}
+
+// ============================================================================
+// OUTER INDUSTRIAL SPECIFICATION FRAME
+// ============================================================================
+
+// Outer bounding border
+rect #outerBorder {
+  size: 1440px 2240px;
+  at: (80px, 80px);
+  fill: transparent;
+  stroke: >inkBlack 4px;
+}
+
+// Inner technical border
+rect #innerBorder {
+  size: 1408px 2208px;
+  at: (96px, 96px);
+  fill: transparent;
+  stroke: >inkBlack 1px;
+}
+
+// Technical Corner Brackets / Registration Markers
+rect #bracketTLH { size: 40px 6px; fill: >inkBlack; at: (80px, 80px); }
+rect #bracketTLV { size: 6px 40px; fill: >inkBlack; at: (80px, 80px); }
+
+rect #bracketTRH { size: 40px 6px; fill: >inkBlack; at: (1480px, 80px); }
+rect #bracketTRV { size: 6px 40px; fill: >inkBlack; at: (1514px, 80px); }
+
+rect #bracketBLH { size: 40px 6px; fill: >inkBlack; at: (80px, 2314px); }
+rect #bracketBLV { size: 6px 40px; fill: >inkBlack; at: (80px, 2280px); }
+
+rect #bracketBRH { size: 40px 6px; fill: >inkBlack; at: (1480px, 2314px); }
+rect #bracketBRV { size: 6px 40px; fill: >inkBlack; at: (1514px, 2280px); }
+
+// ============================================================================
+// SECTION 1: HEADER & LOGISTIC STRIP
+// ============================================================================
+
+// Heavy Industrial Header Outline Box
+rect #headerBox {
+  size: 1408px 56px;
+  at: (96px, 96px);
+  fill: transparent;
+  stroke: >inkBlack 2px;
+}
+
+text #headerTitle {
+  content: "DEFTONES LOGISTICS & INVENTORY CONTROL // SECTOR 916-CA";
+  font-family: >fontMono;
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: >inkBlack;
+  at: (124px, 114px);
+}
+
+text #headerBatch {
+  content: "REF: #DEF-1995-2020";
+  font-family: >fontMono;
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: >inkBlack;
+  at: (1260px, 114px);
+}
+
+// Sub-header metadata row
+text #specLabel1 {
+  content: "ORIGIN: SACRAMENTO, CALIFORNIA";
+  font-family: >fontMono;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: >inkBlack;
+  at: (124px, 175px);
+}
+
+text #specLabel2 {
+  content: "HANDLING: FRAGILE / ACOUSTIC HIGH VOLTAGE";
+  font-family: >fontMono;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: >inkBlack;
+  at: (880px, 175px);
+}
+
+rect #sepLine1 {
+  size: 1408px 2px;
+  at: (96px, 215px);
+  fill: >inkBlack;
+}
+
+// ============================================================================
+// SECTION 2: HERO BRAND LOCKUP ("DEFTONES")
+// ============================================================================
+
+text #brandMain {
+  content: "DEFTONES";
+  font-size: 184px;
+  font-weight: 900;
+  letter-spacing: -6px;
+  color: >inkBlack;
+  at: (120px, 240px);
+}
+
+// Category Badge (1-color outline)
+rect #badgeCat {
+  size: 440px 52px;
+  at: (1030px, 260px);
+  fill: transparent;
+  stroke: >inkBlack 2px;
+}
+
+text #badgeCatText {
+  content: "SOUND PROFILE // HEAVY DRONE";
+  font-family: >fontMono;
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: >inkBlack;
+  at: (1048px, 278px);
+}
+
+// Caution Badge (1-color outline)
+rect #badgeDanger {
+  size: 440px 42px;
+  at: (1030px, 328px);
+  fill: transparent;
+  stroke: >inkBlack 2px;
+}
+
+text #badgeDangerText {
+  content: "CAUTION: HIGH PASS FILTER / 130 dB";
+  font-family: >fontMono;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: >inkBlack;
+  at: (1048px, 341px);
+}
+
+text #brandSub {
+  content: "EXPERIMENTAL NOISE / ALTERNATIVE METAL / SACRAMENTO ARCHIVE";
+  font-family: >fontMono;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 6px;
+  color: >inkBlack;
+  at: (126px, 455px);
+}
+
+rect #sepLine2 {
+  size: 1408px 3px;
+  at: (96px, 500px);
+  fill: >inkBlack;
+}
+
+// ============================================================================
+// SECTION 3: WAREHOUSE MANIFEST & MATRIX GRID
+// ============================================================================
+
+// Left Column: Technical Spec Table
+rect #boxCol1 {
+  size: 680px 420px;
+  at: (120px, 540px);
+  fill: transparent;
+  stroke: >inkBlack 2px;
+}
+
+rect #boxCol1HeaderLine {
+  size: 680px 1px;
+  at: (120px, 582px);
+  fill: >inkBlack;
+}
+
+text #boxCol1HeadText {
+  content: "MANIFEST METRICS // ITEM REGISTER";
+  font-family: >fontMono;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: >inkBlack;
+  at: (140px, 553px);
+}
+
+text #itemRow1 {
+  content: "DISCOGRAPHY LOT ............. 09 MASTER RECORDINGS";
+  font-family: >fontMono;
+  font-size: 16px;
+  font-weight: 600;
+  color: >inkBlack;
+  at: (144px, 608px);
+}
+
+text #itemRow2 {
+  content: "FIRST LOGGED ................ ADRENALINE (1995)";
+  font-family: >fontMono;
+  font-size: 16px;
+  font-weight: 600;
+  color: >inkBlack;
+  at: (144px, 648px);
+}
+
+text #itemRow3 {
+  content: "BREAKTHROUGH CLASS .......... AROUND THE FUR (1997)";
+  font-family: >fontMono;
+  font-size: 16px;
+  font-weight: 600;
+  color: >inkBlack;
+  at: (144px, 688px);
+}
+
+text #itemRow4 {
+  content: "PRIME SPECIMEN .............. WHITE PONY (2000)";
+  font-family: >fontMono;
+  font-size: 16px;
+  font-weight: 700;
+  color: >inkBlack;
+  at: (144px, 728px);
+}
+
+text #itemRow5 {
+  content: "EXTENDED RANGE .............. 7 & 8 STRING PROTOCOL";
+  font-family: >fontMono;
+  font-size: 16px;
+  font-weight: 600;
+  color: >inkBlack;
+  at: (144px, 768px);
+}
+
+text #itemRow6 {
+  content: "STORAGE AMBIENT ............. 18 DEG C / LOW HUMIDITY";
+  font-family: >fontMono;
+  font-size: 16px;
+  font-weight: 600;
+  color: >inkBlack;
+  at: (144px, 808px);
+}
+
+text #itemRow7 {
+  content: "CONTAINER ID ................ WAREHOUSE-BAY-DEF95";
+  font-family: >fontMono;
+  font-size: 16px;
+  font-weight: 800;
+  color: >inkBlack;
+  at: (144px, 848px);
+}
+
+text #itemRow8 {
+  content: "AUTH STATUS ................. VERIFIED ORIGINAL GEAR";
+  font-family: >fontMono;
+  font-size: 16px;
+  font-weight: 700;
+  color: >inkBlack;
+  at: (144px, 888px);
+}
+
+// Right Column: Big Routing Callout & Stencil Numbers
+rect #boxCol2 {
+  size: 680px 420px;
+  at: (824px, 540px);
+  fill: transparent;
+  stroke: >inkBlack 2px;
+}
+
+rect #boxCol2HeaderLine {
+  size: 680px 1px;
+  at: (824px, 582px);
+  fill: >inkBlack;
+}
+
+text #boxCol2HeadText {
+  content: "CLASSIFICATION // BAY ROUTE";
+  font-family: >fontMono;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: >inkBlack;
+  at: (844px, 553px);
+}
+
+// Stencil Number
+text #stencilNum {
+  content: "03:WP";
+  font-size: 140px;
+  font-weight: 900;
+  letter-spacing: -4px;
+  color: >inkBlack;
+  at: (844px, 580px);
+}
+
+text #stencilDesc {
+  content: "GRADE AAA MASTER SPECIMEN // 'WHITE PONY' LEVEL AUDIO ARCHIVE";
+  font-family: >fontMono;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: >inkBlack;
+  size: 620px;
+  at: (848px, 730px);
+}
+
+// Verification Stamp Box
+rect #stampBox {
+  size: 320px 88px;
+  at: (848px, 830px);
+  fill: transparent;
+  stroke: >inkBlack 2px;
+}
+
+text #stampText1 {
+  content: "PHYSICAL INSPECTION PASS";
+  font-family: >fontMono;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: >inkBlack;
+  at: (868px, 848px);
+}
+
+text #stampText2 {
+  content: "DISPATCH DATE: 2000-06-20";
+  font-family: >fontMono;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: >inkBlack;
+  at: (868px, 874px);
+}
+
+// Warning Diamond Outline inside stamp area
+rect #hazardSquare {
+  size: 40px 40px;
+  at: (1400px, 854px);
+  fill: transparent;
+  stroke: >inkBlack 3px;
+  rotation: 45deg;
+}
+
+rect #sepLine3 {
+  size: 1408px 2px;
+  at: (96px, 1000px);
+  fill: >inkBlack;
+}
+
+// ============================================================================
+// SECTION 4: INDUSTRIAL BARCODE SECTION (VECTOR BARS)
+// ============================================================================
+
+text #barcodeTitle {
+  content: "CARGO IDENTIFICATION CODE // SCANNER INTERFACE";
+  font-family: >fontMono;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  color: >inkBlack;
+  at: (120px, 1030px);
+}
+
+// Barcode Pattern
+rect #b1  { size: 10px 220px; fill: >inkBlack; at: (120px, 1070px); }
+rect #b2  { size: 5px  220px; fill: >inkBlack; at: (138px, 1070px); }
+rect #b3  { size: 16px 220px; fill: >inkBlack; at: (152px, 1070px); }
+rect #b4  { size: 6px  220px; fill: >inkBlack; at: (178px, 1070px); }
+rect #b5  { size: 24px 220px; fill: >inkBlack; at: (194px, 1070px); }
+rect #b6  { size: 8px  220px; fill: >inkBlack; at: (230px, 1070px); }
+rect #b7  { size: 12px 220px; fill: >inkBlack; at: (246px, 1070px); }
+rect #b8  { size: 4px  220px; fill: >inkBlack; at: (268px, 1070px); }
+rect #b9  { size: 20px 220px; fill: >inkBlack; at: (282px, 1070px); }
+rect #b10 { size: 14px 220px; fill: >inkBlack; at: (312px, 1070px); }
+rect #b11 { size: 7px  220px; fill: >inkBlack; at: (336px, 1070px); }
+rect #b12 { size: 18px 220px; fill: >inkBlack; at: (352px, 1070px); }
+rect #b13 { size: 6px  220px; fill: >inkBlack; at: (380px, 1070px); }
+rect #b14 { size: 26px 220px; fill: >inkBlack; at: (396px, 1070px); }
+rect #b15 { size: 10px 220px; fill: >inkBlack; at: (432px, 1070px); }
+rect #b16 { size: 5px  220px; fill: >inkBlack; at: (450px, 1070px); }
+rect #b17 { size: 16px 220px; fill: >inkBlack; at: (464px, 1070px); }
+rect #b18 { size: 22px 220px; fill: >inkBlack; at: (490px, 1070px); }
+rect #b19 { size: 8px  220px; fill: >inkBlack; at: (522px, 1070px); }
+rect #b20 { size: 14px 220px; fill: >inkBlack; at: (540px, 1070px); }
+rect #b21 { size: 4px  220px; fill: >inkBlack; at: (564px, 1070px); }
+rect #b22 { size: 28px 220px; fill: >inkBlack; at: (578px, 1070px); }
+rect #b23 { size: 9px  220px; fill: >inkBlack; at: (616px, 1070px); }
+rect #b24 { size: 15px 220px; fill: >inkBlack; at: (634px, 1070px); }
+rect #b25 { size: 6px  220px; fill: >inkBlack; at: (658px, 1070px); }
+rect #b26 { size: 20px 220px; fill: >inkBlack; at: (674px, 1070px); }
+rect #b27 { size: 12px 220px; fill: >inkBlack; at: (704px, 1070px); }
+rect #b28 { size: 7px  220px; fill: >inkBlack; at: (724px, 1070px); }
+rect #b29 { size: 24px 220px; fill: >inkBlack; at: (740px, 1070px); }
+rect #b30 { size: 10px 220px; fill: >inkBlack; at: (774px, 1070px); }
+rect #b31 { size: 5px  220px; fill: >inkBlack; at: (792px, 1070px); }
+rect #b32 { size: 18px 220px; fill: >inkBlack; at: (806px, 1070px); }
+rect #b33 { size: 26px 220px; fill: >inkBlack; at: (834px, 1070px); }
+rect #b34 { size: 8px  220px; fill: >inkBlack; at: (870px, 1070px); }
+rect #b35 { size: 14px 220px; fill: >inkBlack; at: (888px, 1070px); }
+rect #b36 { size: 4px  220px; fill: >inkBlack; at: (912px, 1070px); }
+rect #b37 { size: 20px 220px; fill: >inkBlack; at: (926px, 1070px); }
+rect #b38 { size: 12px 220px; fill: >inkBlack; at: (956px, 1070px); }
+rect #b39 { size: 7px  220px; fill: >inkBlack; at: (976px, 1070px); }
+rect #b40 { size: 28px 220px; fill: >inkBlack; at: (992px, 1070px); }
+rect #b41 { size: 9px  220px; fill: >inkBlack; at: (1030px, 1070px); }
+rect #b42 { size: 15px 220px; fill: >inkBlack; at: (1048px, 1070px); }
+rect #b43 { size: 6px  220px; fill: >inkBlack; at: (1072px, 1070px); }
+rect #b44 { size: 22px 220px; fill: >inkBlack; at: (1088px, 1070px); }
+rect #b45 { size: 14px 220px; fill: >inkBlack; at: (1120px, 1070px); }
+rect #b46 { size: 8px  220px; fill: >inkBlack; at: (1144px, 1070px); }
+rect #b47 { size: 20px 220px; fill: >inkBlack; at: (1162px, 1070px); }
+rect #b48 { size: 5px  220px; fill: >inkBlack; at: (1192px, 1070px); }
+rect #b49 { size: 24px 220px; fill: >inkBlack; at: (1206px, 1070px); }
+rect #b50 { size: 10px 220px; fill: >inkBlack; at: (1240px, 1070px); }
+rect #b51 { size: 6px  220px; fill: >inkBlack; at: (1258px, 1070px); }
+rect #b52 { size: 18px 220px; fill: >inkBlack; at: (1274px, 1070px); }
+rect #b53 { size: 28px 220px; fill: >inkBlack; at: (1302px, 1070px); }
+rect #b54 { size: 12px 220px; fill: >inkBlack; at: (1340px, 1070px); }
+rect #b55 { size: 16px 220px; fill: >inkBlack; at: (1360px, 1070px); }
+rect #b56 { size: 8px  220px; fill: >inkBlack; at: (1386px, 1070px); }
+rect #b57 { size: 14px 220px; fill: >inkBlack; at: (1404px, 1070px); }
+rect #b58 { size: 10px 220px; fill: >inkBlack; at: (1428px, 1070px); }
+rect #b59 { size: 22px 220px; fill: >inkBlack; at: (1448px, 1070px); }
+rect #b60 { size: 6px  220px; fill: >inkBlack; at: (1478px, 1070px); }
+
+text #barcodeNum {
+  content: "(01) 0 082876 53421 9 (10) DEF-WP-2000 (21) 916-SAC-CA";
+  font-family: >fontMono;
+  font-size: 26px;
+  font-weight: 800;
+  letter-spacing: 8px;
+  color: >inkBlack;
+  at: (160px, 1315px);
+}
+
+rect #sepLine4 {
+  size: 1408px 3px;
+  at: (96px, 1370px);
+  fill: >inkBlack;
+}
+
+// ============================================================================
+// SECTION 5: TECHNICAL SCHEMATICS & TRACK METADATA
+// ============================================================================
+
+text #schemHeader {
+  content: "TRACKING MATRIX // SOUND RECEPTACLE SPECIFICATION";
+  font-family: >fontMono;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  color: >inkBlack;
+  at: (120px, 1405px);
+}
+
+// Track 1
+rect #trkBox1 { size: 330px 140px; at: (120px, 1445px); fill: transparent; stroke: >inkBlack 1px; }
+text #trkCode1 { content: "TRK-01 // FEITICEIRA"; font-family: >fontMono; font-size: 15px; font-weight: 800; color: >inkBlack; at: (138px, 1465px); }
+text #trkParam1 { content: "TEMPO: 140 BPM\nTIME: 03:09\nKEY: D# MINOR\nGAIN: +4.2 dB"; font-family: >fontMono; font-size: 12px; font-weight: 600; color: >inkBlack; line-height: 1.5; at: (138px, 1495px); }
+
+// Track 2
+rect #trkBox2 { size: 330px 140px; at: (470px, 1445px); fill: transparent; stroke: >inkBlack 1px; }
+text #trkCode2 { content: "TRK-02 // DIGITAL BATH"; font-family: >fontMono; font-size: 15px; font-weight: 800; color: >inkBlack; at: (488px, 1465px); }
+text #trkParam2 { content: "TEMPO: 128 BPM\nTIME: 04:15\nDELAY: REVERB MATRIX\nDRUM: REVERSE COMP"; font-family: >fontMono; font-size: 12px; font-weight: 600; color: >inkBlack; line-height: 1.5; at: (488px, 1495px); }
+
+// Track 3
+rect #trkBox3 { size: 330px 140px; at: (820px, 1445px); fill: transparent; stroke: >inkBlack 1px; }
+text #trkCode3 { content: "TRK-03 // ELITE"; font-family: >fontMono; font-size: 15px; font-weight: 800; color: >inkBlack; at: (838px, 1465px); }
+text #trkParam3 { content: "GRAMMY AWARD WIN\nTIME: 04:01\nVOCAL: VOCODER DIST\nFREQ: 2.4 kHz PEAK"; font-family: >fontMono; font-size: 12px; font-weight: 600; color: >inkBlack; line-height: 1.5; at: (838px, 1495px); }
+
+// Track 4
+rect #trkBox4 { size: 330px 140px; at: (1170px, 1445px); fill: transparent; stroke: >inkBlack 1px; }
+text #trkCode4 { content: "TRK-05 // PASSENGER"; font-family: >fontMono; font-size: 15px; font-weight: 800; color: >inkBlack; at: (1188px, 1465px); }
+text #trkParam4 { content: "FEAT: MAYNARD J.K.\nTIME: 06:07\nDYNAMIC: DUAL TONE\nSIGNAL: ANALOG HOT"; font-family: >fontMono; font-size: 12px; font-weight: 600; color: >inkBlack; line-height: 1.5; at: (1188px, 1495px); }
+
+rect #sepLine5 {
+  size: 1408px 1px;
+  at: (96px, 1625px);
+  fill: >inkBlack;
+}
+
+// ============================================================================
+// SECTION 6: PACKAGING CERTIFICATION & SAFETY WARNING
+// ============================================================================
+
+rect #warnBox {
+  size: 1380px 220px;
+  at: (120px, 1665px);
+  fill: transparent;
+  stroke: >inkBlack 2px;
+}
+
+rect #warnHeaderLine {
+  size: 1380px 1px;
+  at: (120px, 1710px);
+  fill: >inkBlack;
+}
+
+text #warnHeaderText {
+  content: "CRITICAL STORAGE WARNING // INDUSTRIAL DECIBEL EXPOSURE";
+  font-family: >fontMono;
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: >inkBlack;
+  at: (140px, 1682px);
+}
+
+text #warnTextPara {
+  content: "THIS ARTICLE CONTAINS REINFORCED SONIC DRIVERS AND HEAVY 8-STRING LOW-END RESONANCE. UNRESTRAINED AUDIO EMISSION MAY EXCEED STANDARD TOLERANCE THRESHOLDS. HANDLE SHIPMENT WITH PROPER ACOUSTIC SHIELDING. DO NOT EXPOSE SENSITIVE AUDIO CONSOLES TO UNFILTERED SIGNALS. MANUFACTURED UNDER STRICT SACRAMENTO SOUNDSTANDARDS.";
+  font-family: >fontMono;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 1.6;
+  color: >inkBlack;
+  size: 1100px;
+  at: (144px, 1735px);
+}
+
+// Industrial Hazard Box & Cross
+rect #hazardBox {
+  size: 140px 140px;
+  at: (1320px, 1725px);
+  fill: transparent;
+  stroke: >inkBlack 3px;
+}
+
+cross #hazardCross {
+  size: 70px;
+  fill: >inkBlack;
+  at: (1355px, 1760px);
+}
+
+// ============================================================================
+// SECTION 7: STAMP & DISPATCH FOOTER
+// ============================================================================
+
+rect #sepLine6 {
+  size: 1408px 3px;
+  at: (96px, 1930px);
+  fill: >inkBlack;
+}
+
+rect #dispatchPill1 {
+  size: 320px 48px;
+  at: (120px, 1965px);
+  fill: transparent;
+  stroke: >inkBlack 1px;
+}
+
+text #dispatchPill1Text {
+  content: "DISPATCHED BY: CHINO MORENO";
+  font-family: >fontMono;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: >inkBlack;
+  at: (140px, 1982px);
+}
+
+rect #dispatchPill2 {
+  size: 320px 48px;
+  at: (470px, 1965px);
+  fill: transparent;
+  stroke: >inkBlack 1px;
+}
+
+text #dispatchPill2Text {
+  content: "LEAD GUITAR ENG: STEPHEN CARPENTER";
+  font-family: >fontMono;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: >inkBlack;
+  at: (485px, 1982px);
+}
+
+rect #dispatchPill3 {
+  size: 320px 48px;
+  at: (820px, 1965px);
+  fill: transparent;
+  stroke: >inkBlack 1px;
+}
+
+text #dispatchPill3Text {
+  content: "DRUM DEPT: ABE CUNNINGHAM";
+  font-family: >fontMono;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: >inkBlack;
+  at: (840px, 1982px);
+}
+
+rect #dispatchPill4 {
+  size: 320px 48px;
+  at: (1170px, 1965px);
+  fill: transparent;
+  stroke: >inkBlack 1px;
+}
+
+text #dispatchPill4Text {
+  content: "TURNTABLES/KEYS: FRANK DELGADO";
+  font-family: >fontMono;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: >inkBlack;
+  at: (1185px, 1982px);
+}
+
+text #footSerial {
+  content: "DEF // 916-SAC // PALLET LOT #4902-DEF // REVISION 2.4.0";
+  font-family: >fontMono;
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: 4px;
+  color: >inkBlack;
+  at: (120px, 2060px);
+}
+
+// Final Bottom Outline Box
+rect #finalBar {
+  size: 1408px 60px;
+  at: (96px, 2220px);
+  fill: transparent;
+  stroke: >inkBlack 2px;
+}
+
+text #finalBarText1 {
+  content: "DEFTONES SOUND ARCHIVE // CAUTION: HEAVY DRONE FREQUENCIES";
+  font-family: >fontMono;
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: >inkBlack;
+  at: (124px, 2242px);
+}
+
+text #finalBarText2 {
+  content: "SACRAMENTO, CA • USA";
+  font-family: >fontMono;
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: >inkBlack;
+  at: (1280px, 2242px);
+}

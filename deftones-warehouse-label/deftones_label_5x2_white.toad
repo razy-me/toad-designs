@@ -1,0 +1,337 @@
+﻿// ============================================================================
+// 🧬 TOAD MULTI-DNA INSPIRATION MATRIX (Min 3 Personas + Min 3 Corporate Systems)
+// ----------------------------------------------------------------------------
+// 🎭 CREATIVE PERSONAS (the_seed/09_CREATIVE_PERSONAS_AND_STYLES/):
+//   1. jessica_sterling -> Precise Swiss spatial proportions, generous negative space, disciplined margins
+//   2. felix_aero_lindner -> Constructivist geometry, clean hairline structures, architectural balance
+//   3. darius_cole -> Brutalist industrial streetwear aesthetics, stark high-contrast typography
+// 🏢 CORPORATE DESIGN SYSTEMS (the_seed/10_CORPORATE_DESIGN_SYSTEMS/):
+//   1. metro_transvia -> Modernist technical typography discipline, letter-spacing hygiene
+//   2. rostwerk_kaffee -> Pure monochrome screenprint tokens, tactile restraint
+//   3. schoko_kuvertuere -> Precision layout grid, clean print-ready silhouettes, zero clutter
+// ============================================================================
+
+// --- 1-Color Screenprint Tokens (Pure White on Transparent Canvas, 5:2 Wide Format) ---
+>inkWhite      = #FFFFFF;
+>fontSans      = "Arial, Helvetica, sans-serif";
+>fontMono      = "Consolas, Courier New, monospace";
+
+// ============================================================================
+// CANVAS CONFIGURATION (5:2 Wide Horizontal Apparel Print: 2500x1000 @ 300DPI)
+// ============================================================================
+
+canvas "Deftones-Warehouse-Label-5x2-White" {
+  size: 2500px 1000px;
+  background: transparent;
+  font-family: >fontSans;
+  export: all;
+  quality: 100;
+}
+
+// ============================================================================
+// OUTER INDUSTRIAL SPECIFICATION FRAME
+// Inset 220px horizontally, 160px vertically (Border: 2060x680)
+// ============================================================================
+
+rect #outerBorder {
+  size: 2060px 680px;
+  at: (220px, 160px);
+  fill: transparent;
+  stroke: >inkWhite 3px;
+}
+
+// Header separator line
+rect #headerBarLine {
+  size: 2060px 2px;
+  at: (220px, 224px);
+  fill: >inkWhite;
+}
+
+text #headerTitle {
+  content: "DEFTONES LOGISTICS & INVENTORY CONTROL // SECTOR 916-CA";
+  font-family: >fontMono;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  color: >inkWhite;
+  at: (250px, 190px);
+}
+
+text #headerOrigin {
+  content: "SACRAMENTO ARCHIVE SPEC // USA";
+  font-family: >fontMono;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  color: >inkWhite;
+  at: (1890px, 190px);
+}
+
+// ============================================================================
+// MAIN BODY: TWO CLEAN BALANCED WINGS
+// Left Wing: X 250px to 1070px (Width 820px)
+// Right Wing: X 1430px to 2250px (Width 820px)
+// Spine Gutter: X 1070px to 1430px (360px empty negative space)
+// ============================================================================
+
+// --- LEFT WING: HERO BRAND & MANIFEST METRICS ---
+
+text #brandMain {
+  content: "DEFTONES";
+  font-size: 104px;
+  font-weight: 900;
+  letter-spacing: 8px;
+  color: >inkWhite;
+  at: (250px, 256px);
+}
+
+text #brandSub {
+  content: "EXPERIMENTAL NOISE / ALTERNATIVE METAL / ARCHIVE";
+  font-family: >fontMono;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: >inkWhite;
+  at: (254px, 376px);
+}
+
+// Left Wing Manifest Table
+rect #boxCol1 {
+  size: 820px 330px;
+  at: (250px, 416px);
+  fill: transparent;
+  stroke: >inkWhite 1.5px;
+}
+
+rect #boxCol1HeadLine {
+  size: 820px 1px;
+  at: (250px, 458px);
+  fill: >inkWhite;
+}
+
+text #boxCol1HeadText {
+  content: "MANIFEST METRICS // ITEM REGISTER";
+  font-family: >fontMono;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: >inkWhite;
+  at: (274px, 434px);
+}
+
+text #itemRow1 {
+  content: "DISCOGRAPHY LOT ............. 09 MASTER RECORDINGS";
+  font-family: >fontMono;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  color: >inkWhite;
+  at: (274px, 480px);
+}
+
+text #itemRow2 {
+  content: "FIRST LOGGED ................ ADRENALINE (1995)";
+  font-family: >fontMono;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  color: >inkWhite;
+  at: (274px, 520px);
+}
+
+text #itemRow3 {
+  content: "BREAKTHROUGH CLASS .......... AROUND THE FUR (1997)";
+  font-family: >fontMono;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  color: >inkWhite;
+  at: (274px, 560px);
+}
+
+text #itemRow4 {
+  content: "PRIME SPECIMEN .............. WHITE PONY (2000)";
+  font-family: >fontMono;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: >inkWhite;
+  at: (274px, 600px);
+}
+
+text #itemRow5 {
+  content: "EXTENDED RANGE .............. 7 & 8 STRING PROTOCOL";
+  font-family: >fontMono;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  color: >inkWhite;
+  at: (274px, 640px);
+}
+
+text #itemRow6 {
+  content: "CONTAINER ID ................ WAREHOUSE-BAY-DEF95";
+  font-family: >fontMono;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  color: >inkWhite;
+  at: (274px, 680px);
+}
+
+// --- RIGHT WING: BARCODE, ROUTING & DISPATCH INSPECTION ---
+
+text #barcodeTitle {
+  content: "CARGO IDENTIFICATION CODE // SCANNER INTERFACE";
+  font-family: >fontMono;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: >inkWhite;
+  at: (1450px, 256px);
+}
+
+// Industrial Barcode SVG Vector Path
+path #barcodeVector {
+  d: "M 0 0 L 0 64 M 14 0 L 14 64 M 26 0 L 26 64 M 44 0 L 44 64 M 56 0 L 56 64 M 76 0 L 76 64 M 88 0 L 88 64 M 102 0 L 102 64 M 122 0 L 122 64 M 134 0 L 134 64 M 150 0 L 150 64 M 166 0 L 166 64 M 180 0 L 180 64 M 200 0 L 200 64 M 214 0 L 214 64 M 230 0 L 230 64 M 244 0 L 244 64 M 262 0 L 262 64 M 280 0 L 280 64 M 296 0 L 296 64 M 312 0 L 312 64 M 332 0 L 332 64 M 348 0 L 348 64 M 366 0 L 366 64 M 382 0 L 382 64 M 400 0 L 400 64 M 416 0 L 416 64 M 432 0 L 432 64 M 450 0 L 450 64 M 468 0 L 468 64 M 486 0 L 486 64 M 504 0 L 504 64 M 522 0 L 522 64 M 542 0 L 542 64 M 560 0 L 560 64 M 578 0 L 578 64 M 598 0 L 598 64 M 616 0 L 616 64 M 634 0 L 634 64 M 654 0 L 654 64 M 672 0 L 672 64 M 690 0 L 690 64 M 710 0 L 710 64 M 728 0 L 728 64 M 748 0 L 748 64 M 768 0 L 768 64 M 788 0 L 788 64 M 806 0 L 806 64";
+  stroke: >inkWhite 7px;
+  fill: transparent;
+  at: (1450px, 280px);
+}
+
+text #barcodeNum {
+  content: "(01) 0 082876 53421 9 (10) DEF-WP-2000 (21) 916-SAC-CA";
+  font-family: >fontMono;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 5px;
+  color: >inkWhite;
+  at: (1450px, 362px);
+}
+
+// Right Wing Stencil & Spec Box
+rect #stencilBox {
+  size: 380px 180px;
+  at: (1450px, 416px);
+  fill: transparent;
+  stroke: >inkWhite 1.5px;
+}
+
+text #stencilNum {
+  content: "03:WP";
+  font-size: 80px;
+  font-weight: 900;
+  letter-spacing: 6px;
+  color: >inkWhite;
+  at: (1470px, 434px);
+}
+
+text #stencilDesc {
+  content: "GRADE AAA MASTER SPECIMEN\nWHITE PONY LEVEL AUDIO ARCHIVE\nCHEST GRAPHIC SPECIFICATION";
+  font-family: >fontMono;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: >inkWhite;
+  line-height: 1.5;
+  size: 340px;
+  at: (1474px, 524px);
+}
+
+// Right Wing Physical Inspection Box
+rect #stampBox {
+  size: 400px 180px;
+  at: (1850px, 416px);
+  fill: transparent;
+  stroke: >inkWhite 1.5px;
+}
+
+text #stampText1 {
+  content: "PHYSICAL INSPECTION PASS";
+  font-family: >fontMono;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: >inkWhite;
+  at: (1874px, 438px);
+}
+
+text #stampText2 {
+  content: "DISPATCH DATE: 2000-06-20\nVERIFIED BY: SACRAMENTO DEPT\nCONTAINER: LOT #4902-DEF";
+  font-family: >fontMono;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  line-height: 1.6;
+  color: >inkWhite;
+  size: 350px;
+  at: (1874px, 470px);
+}
+
+// Warning & Safety Certification Strip
+rect #warnBox {
+  size: 800px 120px;
+  at: (1450px, 626px);
+  fill: transparent;
+  stroke: >inkWhite 1.5px;
+}
+
+text #warnHeaderText {
+  content: "CRITICAL STORAGE WARNING // INDUSTRIAL DECIBEL EXPOSURE";
+  font-family: >fontMono;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: >inkWhite;
+  at: (1470px, 642px);
+}
+
+text #warnLine1 {
+  content: "ARTICLE CONTAINS REINFORCED SONIC DRIVERS AND HEAVY LOW-END RESONANCE.";
+  font-family: >fontMono;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: >inkWhite;
+  at: (1470px, 672px);
+}
+
+text #warnLine2 {
+  content: "UNRESTRAINED AUDIO EMISSION MAY EXCEED STANDARD OPERATIONAL THRESHOLDS.";
+  font-family: >fontMono;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: >inkWhite;
+  at: (1470px, 696px);
+}
+
+// ============================================================================
+// FOOTER BAR (FULL WIDTH INSIDE FRAME)
+// ============================================================================
+
+rect #footerBarLine {
+  size: 2060px 2px;
+  at: (220px, 770px);
+  fill: >inkWhite;
+}
+
+text #finalBarText1 {
+  content: "DEFTONES SOUND ARCHIVE // CAUTION: HEAVY DRONE FREQUENCIES // ALL MASTERS REGISTERED";
+  font-family: >fontMono;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: >inkWhite;
+  at: (250px, 796px);
+}
+
+text #finalBarText2 {
+  content: "SACRAMENTO ARCHIVE • USA";
+  font-family: >fontMono;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: >inkWhite;
+  at: (1950px, 796px);
+}
