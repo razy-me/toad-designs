@@ -45,3 +45,11 @@ For details, consult `.agents/REPO_STRUCTURE.md`.
    - Every completed design must achieve `100/100` (`Grade A+`) in `toad report --strict`.
    - Always follow the 13 TOAD syntax rules, 4px-Quantum Grid Law, APCA contrast minimums, and Anti-AI-Slop constraints.
    - Leverage the `toad-design` skill for all workflows.
+
+4. **PILL & BADGE CENTERING LAW (MANDATORY)**:
+   - Whenever placing text or icons inside a pill badge, pill banner, or rounded CTA container, **NEVER manually estimate Y coordinates with top alignment**.
+   - ALWAYS use dedicated dual-axis functional centering:
+     - Either `vertical-align: middle;` and `align: center;` (or `align: start;` with full container height `size: ... <height>px; at: ... 0px;`).
+     - Or a flex container: `stack { direction: horizontal; align: center; justify: center; }`.
+     - Or relational positioning: `at: center of <target>;`.
+   - This prevents font-leading discrepancies and guarantees mathematical, optical centering across both axes in all renderers (PNG, SVG, PSD, PDF).
